@@ -1,0 +1,1317 @@
+/*
+Theme Name: Twenty Fourteen
+Theme URI: http://wordpress.org/themes/twentyfourteen
+Author: the WordPress team
+Author URI: http://wordpress.org/
+Description: In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: twentyfourteen
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+ 
+@import "compass";
+
+/**
+ * cats
+ *
+ * 1.0 - Reset
+ * 2.0 - Genericons
+ * 3.0 - Typography
+ * 4.0 - Elements
+ * 5.0 - Forms
+ * 6.0 - Navigations
+ *   6.1 - Links
+ *   6.2 - Menus
+ * 7.0 - Accessibility
+ * 8.0 - Alignments
+ * 9.0 - Clearings
+ * 10.0 - Header
+ * 11.0 - Widgets
+ * 12.0 - Content
+ *    12.1 - Posts and pages
+ *    12.2 - Post Formats
+ *    12.3 - Comments
+ * 13.0 - Footer
+ * 14.0 - Media
+ *    14.1 - Captions
+ *    14.2 - Galleries
+ * 15.0 - Multisite
+ * 16.0 - Media Queries
+ *    16.1 - Mobile Large
+ *    16.2 - Tablet Small
+ *    16.3 - Tablet Large
+ *    16.4 - Desktop Small
+ *    16.5 - Desktop Medium
+ *    16.6 - Desktop Large
+ *    16.7 - Desktop X-Large
+ * 17.0 - Print
+ */
+
+
+
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/*
+ * portfolio site specific reset
+ */
+body{
+    overflow: hidden;
+    position: absolute;
+    z-index: 300;
+  }
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/*==========================================================================
+  media queries
+  ==========================================================================*/
+ $mobile-width: 320px;
+ $tablet-width:767px;
+ $desktop-width: 1023px;
+ $widescreen-width: 1280px;
+ 
+  /*==========================================================================
+     320px width mobile device styles
+    ==========================================================================*/
+ @mixin mobile {
+     @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width}) {
+        @content;
+     } 
+   }
+ 
+  /*==========================================================================
+     768px width mobile device styles
+    ==========================================================================*/
+  
+   @mixin tablet {
+     @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}) {
+        @content;
+     } 
+   }
+ 
+ 
+ /*==========================================================================
+   1280px width widescreen device styles
+  ==========================================================================*/
+ @mixin widescreen {
+     @media (min-width: #{$widescreen-width}) {
+        @content;
+     } 
+   }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+    //type hierarchy
+      h1{
+        font-size: 48px;
+        }
+      h2{
+        font-size: 24px;
+      }
+      h3{
+        
+      }
+      h4{
+        
+      }
+      h5{
+        
+      }
+      
+    //font stack
+    .primary--font{
+      font-family: "gill sans", helvetica, sans-serif;
+      font-weight: normal;
+      }
+  
+  
+  
+  
+/* ==========================================================================
+   B.E.M. (Block Element Modifier) Style css
+   notes: 
+   -block names consisting of multiple words will be camelCased e.g. sideItem
+   -instead of using __ to identify elements i will use "-" e.g. archive-nav
+   -names for modifiers use a double dash e.g. height--fix
+   ========================================================================== */
+
+/*block level styes*/
+.wrapper{
+  @extend .overflow--hidden, .width--full;  
+    height: 100%;
+    
+  .header{
+    @extend .horizontal--shadow, .pos--absolute, .width--full;
+    @include mobile {
+      z-index: 200;
+    }
+    height: 120px;
+    top: 0;
+    background-color: white;
+      
+      .nav{
+        @extend .width--full;
+        height: 120px;
+      }
+    }
+   
+   .sidebar{
+     @extend .vertical--shadow, .overflow--hidden;
+     @include mobile {
+       background-color: white;
+       position: absolute;
+       z-index: 100;
+     }
+     width: 120px;
+     height: 100%;
+      }
+    .mainContent{
+      @extend .pos--absolute;
+      @include tablet {
+          width: 76.56%;
+          height: 82.42%;
+        }
+       @include mobile {
+         width: 81.25%;
+         height: 62.5%;
+         top: 120px;
+         left: 0px;
+       } 
+      overflow: hidden; 
+      overflow-y: auto;
+      width: 80.42%;
+      height:77.16%;
+      padding: 30px;
+      top: 120px;
+      left: 120px;
+        /*.pageBreak*/
+          .pageBreak{
+            border-top:1px solid black;
+            }
+        }
+        
+    
+  }
+ 
+/*element level styles*/
+.header-toggle{
+  @include mobile {
+    left: 126px;
+  }
+  
+  width: 70px;
+  height: 30px;
+  position: absolute;
+  top: 120px;
+  left: 364px;
+  z-index: 300;
+}
+.header-off{
+  top: 0px;
+}
+.wrapper{
+  
+  /*state specific style below needs to be moved*/
+  .content-header-off{
+    @include mobile{
+      height: 108%;
+    }
+    @include tablet {
+      height: 72%;
+    }
+    height: 92.18%;
+    top: 0px;
+  }
+}
+
+
+.nav-list{
+  @extend .no--liststyle
+}
+.nav-item{
+    @include mobile{
+      margin: 38px 0px;
+      margin-right: 5px;
+      margin-left: 5px;
+      width: 45px;
+      height: 45px;
+    }
+    margin:35px 0px;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+ }
+.home-nav-item{
+  @include mobile{
+    margin-left: 11px; 
+  }
+} 
+   .medium-circle{
+     @include mobile{
+       width: 45px;
+       height: 45px;
+     }
+     margin-right: 30px;
+     width: 50px;
+     height: 50px;
+     background: #b2b2b2;
+     -moz-border-radius: 50px;
+     -webkit-border-radius: 50px;
+     border-radius: 50px;
+     position: absolute;
+  }
+  
+    .nav-item-link{
+      @extend .primary--font, .pos--absolute, .remove--underline;
+      @include mobile{
+        margin: 17px 9px;
+      }
+      margin: 19px 5px;
+      margin-left: 10px; 
+      font-size: 10px;
+      font-weight: 200;
+      letter-spacing: .5px;
+      color: white;
+      z-index: 20;
+      }
+     .webD-link{
+       @include mobile{
+         margin-left: 11px;
+       }
+       margin-left: 13px;
+      }
+     .contact-link{
+       @include mobile{
+         margin-left:5px;
+       }
+       margin-left: 6px;
+      }
+      
+     .nav-item:hover > .medium-circle {
+       @include mobile{
+         width: 45px;
+         height: 45px;
+       }
+       
+        width: 55px;
+        height: 55px;
+      } 
+    .nav-item:hover {
+      @include mobile{
+        margin-bottom: 38px;
+       }
+        margin-bottom: 35px;
+      }
+      .nav-item:hover > .medium-circle > .nav-item-link{
+        @include mobile{
+          margin: 16px 4px;
+          margin-left: 8px;
+        }
+          margin: 21px 6px;
+          margin-left: 13px;
+      }
+      .nav-item:hover > .medium-circle > .webD-link{
+          @include mobile{
+            margin-left: 11px;
+          }
+          margin-left: 16px;
+      }
+      .nav-item:hover > .medium-circle > .contact-link{
+         @include mobile{
+           margin-left: 4px;
+         }
+          margin-left: 8px;
+      }
+      .nav-item:hover{
+         @include mobile{
+            margin-right: 5px; 
+         }
+          margin-right: 25px;
+      }
+     
+.nav-strikeThrough{
+    @extend .pos--absolute, .width--full;
+    
+    border-top: 1px solid #B2B2B2;
+    top: 60px;
+    }
+   .nav-strikeThrough-mobile{
+     @include mobile{
+       display:block;
+       position: absolute;
+       width: 100%;
+       border-top: 1px solid #B2B2B2;
+       top: 60px;
+     }
+     display:none;
+   } 
+    
+  .sidebar-inside-wrapper{
+      @extend .overflow--hidden, .pos--absolute;
+      width: 105px;
+      height: 84%;
+      top: 120px;
+      
+      .sidebar-list{
+        @extend .y--scrollable, .pos--absolute;
+        height: 648px;
+        list-style-type: none;
+        }
+  }
+        .side-item{
+          margin:0 15px;
+          width: 90px;
+          height: 90px;
+          cursor: pointer;
+          
+            .item-wrap{
+              @extend .side-item, .overflow--hidden, .pos--absolute;
+              width: 90px;
+              height: 90px;
+              margin:0;
+              z-index: 200;
+              
+                .item-txt{
+                  @extend .pos--absolute, .primary--font;
+                  width: 90px;
+                  top: 33px;
+                  z-index: 200;
+                  text-align: center;
+                  font-size: 12px;
+                  font-weight: 200;
+                  line-height: 14px;
+                  letter-spacing: 1px;
+                  color: white;
+                  }
+              }
+          }
+          .item-cover{
+            @extend .side-item, .pos--absolute; 
+            margin:0;
+            top: 0px;
+            z-index: 100;
+            background-color: #555555;
+            opacity: 0.8;
+            filter: alpha(opacity = 80); /*For IE8 and earlier*/ 
+                }
+                
+          .item-wrap:hover > .item-cover{
+            background-color: black;
+          }      
+  .sidebar-toggle{
+    @include mobile {
+      top: 205px;
+    }
+    width: 30px;
+    height: 70px;
+    position: absolute;
+    z-index: 100;
+    top: 364px;
+    left: 120px;
+  }        
+  .sidebar-listItem{
+    @extend .side-item;
+    margin-bottom: 15px;
+  }
+  .first-sidebar-item{
+    margin-top: 15px;
+  }
+  li.ui-draggable-dragging {
+    list-style:none;
+}
+  
+.main-content-list{
+      @extend .no--liststyle, .overflow--hidden;
+     
+      margin-top: 30px;
+      height: 100%;
+      
+      .main-content-listItem{
+        @extend .overflow--hidden;
+        margin-bottom: 30px;
+        @include tablet{
+          
+        }  
+            .main-img{
+              width: 100%;
+            }
+            
+           .post-divider{
+             @include mobile{
+               margin-left: 0px;
+             }
+             @include tablet{
+               width: 90%;
+              
+             }
+             
+             margin-left: 30px;
+             width: 94%;
+             height:29px;
+             border-top: 1px solid black;
+             border-right: 1px solid black;
+             opacity: .5;
+      
+              .divider-title-background{
+                width: 191px;
+                height: 29px;
+                background-color: black;
+                opacity: 1.5;
+                
+                .divider-title{
+                  @extend .primary--font;
+                  color: white;
+                  padding: 5px 10px;
+                  font-weight: 200;
+                  letter-spacing: .5px;
+                  text-align: center;
+                }
+              }
+            } 
+         }
+       
+       .dndIntro{
+         margin-bottom:0px;
+         width: 100%;
+         height: 100%;
+         background-color: #666666;
+           
+           .dnd-text{
+             @extend .primary--font;
+             @include mobile{
+               width: 50%;
+               margin-top: 20px;
+               font-size: 24px;
+             }
+                margin: 130px auto;
+                width: 494px;
+                color: white;
+                font-size: 48px;
+           }
+       }
+     }
+     
+  .home-content-list, .photo-content-list {
+    margin-top:0px;
+    @include mobile {      
+    height: 100%;
+    }
+   }
+   
+   
+   .web-content-list, .about-content-list, .contact-content-list{
+     @include mobile {
+       height: 71.33%;
+     }
+   }
+   
+      
+  
+  .content-wrap{
+    @include mobile{
+      height: 100%;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+    height: 81%;
+    margin-top: 5px;
+    margin-left: 15px;
+    
+  }
+  .about-wrap{
+    @include mobile{
+      height: 100%;
+    }
+    @include tablet{
+      height: 88%;
+    }
+    
+  } 
+  .web-wrap{
+    @include mobile{
+    }
+    @include tablet{
+      height: 90%;
+    }
+      
+  }
+  
+.about-img {
+    @include mobile{
+      display:block;
+      margin-left: auto;
+      margin-right:auto;
+      float: none;
+    }
+    
+    float: left;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    }
+  
+  .content {
+    @extend .primary--font;
+    @include tablet{
+      width: 378px;
+    }
+    @include mobile{
+      margin-left: 0px;
+      width: 260px;
+    }
+    margin-top: -5px;
+    margin-left: 195px;
+    width: 435px;
+    word-spacing: 1px;
+    letter-spacing: .5px;
+    line-height: 17.9pt;
+  }
+
+    .post-preview {
+      @include mobile{
+        margin-left: 30px;
+        height:100px;
+      }
+      
+      margin-top: 40px;
+      margin-left: 60px;
+      height: 240px;
+      float: left;
+    }
+        
+        .deskMock, .mobileMock, .tabletMock {
+          background: url(/wordpress2/wp-content/themes/portTwentyfifteen/img/webSprites.png) no-repeat;
+          display: inline-block;
+          }
+          .post-preview-link{
+             position: relative;
+             top: 0px;
+             z-index: 300;
+             overflow: hidden;
+          }
+         .deskMock {
+           @extend .pos--relative;
+           @include tablet{
+             display: none;
+           }
+           @include mobile {
+             display: none;
+           }
+           background-position: 0 0;
+           margin-right: 30px;
+           width: 307px;
+           height: 252px;
+           top: -20px;
+           
+              .post-preview-link{
+                width: 306px;
+                height: 213px;
+                display:block;
+              }
+              .post-preview-img{
+                @extend .pos--relative;
+                top: -197px;
+                left: 17px;
+                }
+           }
+           
+          .tabletMock{
+            @extend .pos--relative;
+            @include tablet {
+              margin-right: 60px;
+              top: -20px;
+            }
+            @include mobile {
+              display:none;
+            }
+            background-position: -311px 0;
+            margin-right: 30px;
+            width: 120px;
+            height: 180px;
+            top: -100px;
+            
+              .post-preview-link{
+                width: 119px;
+                height: 180px;
+                display: block;
+              }
+            }
+          .mobileMock{
+             @extend .pos--relative;
+             @include tablet {
+             margin-right: 60px;
+             top: -20px;
+             }
+             @include mobile {
+             top: -20px;
+             }
+             top: -100px;
+             background-position: -435px 0;
+             margin-right: 30px;
+             width: 55px;
+             height: 114px;
+             top: -100px;
+             
+              .post-preview-link{
+                width: 54px;
+                height: 114px;
+                display: block;
+              }
+            }
+          .code-view-list {
+            @include tablet {
+              top: 115px;
+            }
+            @include mobile {
+              top: 50px;
+            }
+            border-left: 1px solid black;
+            width: 106px;
+            float: left;
+            position: relative;
+            top: 149px;
+            
+            }
+            .view-list-item{
+              margin-left: 10px;
+              list-style: none;
+              font-family: "gill sans", helvetica, sans-serif;
+              font-size: 18px;
+            } 
+              .view-list-item-link{
+                display: block;
+                width: 95px;
+                height: 19px;
+                position: absolute;
+               }
+               
+             .view-source {
+               
+             }
+             .code-viewer{
+               display: none;
+               position: absolute;
+               top: 120px;
+               left: 220px;
+               width: 50%;
+               height: 80%;
+               background-color: white;
+               z-index: 600;
+               overflow: scroll;
+             }
+               pre.prettyprint{
+                 padding: 0 !important;
+                 border: 0 !important;
+               }
+            .psd-viewer{
+              display: none;
+              position: absolute;
+              top: 0px;
+              z-index: 600;
+              overflow:scroll;
+            } 
+            
+            
+.contact-content{
+  margin-top: 30px;
+  margin-left: 30px;
+}
+   .contact-content-paragraph{
+     margin-bottom: 15px;
+   }
+       .contact-social{
+         width: 30px;
+         background-image: url(http://localhost/wordpress2/wp-content/uploads/2015/07/Rounded-Square-Flat-Bootstrap-Social-Icons.png);
+         height: 30px;
+         display:inline-block;
+         }
+         .facebook{
+           background-position: -323px -103px;
+           }
+         .linkedin{
+           background-position: -391px -167px;
+           }
+           .contact-social-link{
+             display: block;
+             width: 30px;
+             height: 30px;
+           }
+
+  /*tool tip styles*/
+ .tool-tip{
+   @include mobile {
+     display: none;
+   }
+   @extend .pos--relative;
+   max-width: 335px;
+   z-index: 200;
+ }
+  .tool-point-wrap{
+    @extend .pos--relative;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #919191;
+    top: 60px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+   
+  
+    .tool-point{
+      margin: 4px;
+      width: 11px;
+      height: 11px;
+      background-color: black;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
+      opacity: .7;
+    }
+  }
+  .trapezoid{
+    @extend .pos--relative;
+    width: 45px;
+    height: 16px;
+    border-top: 1px solid #919191;
+    border-left: 1px solid #919191;
+    top: -50px;
+    left: 22px;
+    opacity: .9;
+    -webkit-transform: skew(-40deg);
+    -moz-transform: skew(-40deg);
+    -o-transform: skew(-40deg);
+    visibility: hidden;
+  }
+  .tool-tip-wrap{
+    @extend .pos--relative;
+    max-width: 260px;
+    top: -15px;
+    left: 74px;
+    overflow: hidden;
+    border-left: 1px solid #919191;
+    visibility: hidden;
+  
+    
+      .tool-text{
+        @extend .pos--relative, .primary--font;
+        margin-left: 10px;
+        max-width: 260px;
+        padding: 20px;
+        font-size: 14px;
+        font-weight: 300;
+        color: white;
+        line-height:17px;
+        z-index:200;
+        opacity:1;
+        }
+        
+         .tool-background{
+        @extend .pos--absolute;
+        margin-left:10px;
+        min-width: 250px;
+        height: 100%;
+        top:0;
+        z-index: 100;
+        background-color: #919191;
+        opacity: .8;
+    }
+      
+  }
+  
+  
+  
+  
+#tool-tip-1{
+  top: 18px;
+}  
+
+
+#tool-tip-2{
+  top: -150px;
+  left: 62.6%;
+}
+#tool-tip-3{
+  top: -134px;
+  left: 70%;
+}
+#tool-tip-4{
+    top: -60px;
+  left: 9%;
+}
+#tool-tip-5{
+  top: 51px;
+  right: -71%;
+}
+
+#tool-tip-6{
+    top: -46px;
+    right: -8%;
+}
+#tool-tip-7{
+    top: 1061px;
+    right: -10%;
+}
+
+/*preview iframes*/
+.preview-frame{
+  position: absolute;
+  overflow: hidden;
+  z-index: 500;
+  top: 0px;
+  background-color: white;
+  display: none;
+  
+}
+.tablet-preview-frame{ 
+  width: 768px;
+  height: 1024px;
+  top: -135px;
+  left: 147px;
+  
+}
+
+.tablet-preview-frame{
+  -webkit-transform: scale(0.5, 0.5);  /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.5);  /* FF3.5+ */
+      -ms-transform: scale(0.5);  /* IE9 */
+       -o-transform: scale(0.5);  /* Opera 10.5+ */
+         
+}
+.mobile-preview-frame{
+  width: 320px;
+  height: 480px;
+  top: 120px;
+  left: 410px;
+}
+.gray-background{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  opacity: .6;
+  z-index: 400;
+  display: none;
+}
+.glyphicon-remove{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 84px;
+  left: 750px;
+  z-index: 410;
+  background-image: url("/wordpress2/wp-content/themes/portTwentyfifteen/img/glyphs/glyphicons-208-remove-2-white.png"); 
+}
+
+
+
+
+
+
+
+
+/*modifier*/
+  .clear--fix{
+    clear: both;
+  }
+  .height--fix{
+    overflow: hidden;
+  }
+  .inline{
+    display: inline;
+  }
+  /*width*/
+  .width--full{
+    width: 100%;
+  }
+  /*scrollable*/
+  .y--scrollable{
+    overflow-y: scroll;
+  }
+  
+  /*listDecoration*/
+  .no--liststyle{
+    list-style: none;
+  }
+  /*remove nav underline*/
+  .remove--underline{
+    text-decoration: none;
+  }
+  /*absolute positioning*/
+  .pos--absolute{
+    position: absolute;
+  }
+  .pos--relative{
+    position: relative;
+  }
+  .overflow--hidden{
+    overflow:hidden;
+  }
+  .horizontal--shadow{
+  -moz-box-shadow:    3px 2px 8px -2px #010101;
+  -webkit-box-shadow: 3px 2px 8px -2px #010101;
+    box-shadow:       3px 2px 8px -2px #010101;
+}
+.vertical--shadow{
+  -moz-box-shadow:    1px 3px 1px 2px #ccc;
+  -webkit-box-shadow: 1px 3px 1px 2px #ccc;
+    box-shadow:       1px 3px 1px 2px #ccc;
+}
+.display--none{
+  dislay: none;
+}
+
+/*end BEM*/ 
+
+
+
+
+
+
+
+
+
+
+  
+  
+/*=================
+ Helper Classes 
+===================*/
+
+.oVisible{
+  overflow: visible;
+}
+.emptyListItem{
+  background-color: #B2B2B2;
+}
+.emptyListItem span{
+  position: relative;
+  top: 280px;
+  left: 44%;
+  color: white;
+}
+  .dirty-heads-txt{
+    top: 29px;
+  }
+  
+  
+/*====================================================================================================================================
+  state specific styles 
+  notes: These include state specific styles so for specificity's sake they are located beneath block, element, modifier level styles
+=====================================================================================================================================*/
+ .selected{
+   @include mobile{
+     width: 60px;
+     height: 60px;
+     margin: 30px 0px;
+     margin-left: 5px;
+     margin-right: 5px;
+   }
+    width: 90px; 
+    height: 90px; 
+    margin: 15px 0px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .home-nav-item{
+    @include mobile{
+      margin-left: 11px;
+    }
+  }
+  .selected > .medium-circle > .nav-item-link{
+    @include mobile{
+      margin:21px 11px;
+    }
+    margin: 36px 26px;
+    font-size: 14px;
+  }
+   .selected > .medium-circle > .contact-link{
+     @include mobile{
+       margin-left: 5px;
+     }
+     margin-left: 20px;
+   }
+   .selected > .medium-circle > .webD-link{
+     @include mobile{
+       margin-left: 14px;
+     }
+   }
+  .selected:hover > .medium-circle{
+    @include mobile{
+      width: 60px;
+      height: 60px;
+    }
+    width:90px;
+    height:90px;
+  }
+  .selected:hover{
+    @include mobile{
+      margin-bottom: 30px;
+      margin-right: 5px;
+    }
+    margin-bottom:15px;
+    margin-right:15px;
+  }
+  .selected:hover > .medium-circle > .nav-item-link{
+    @include mobile{
+      margin:21px 11px;
+    }
+      margin: 36px 26px;
+  }
+  .selected:hover > .medium-circle > .contact-link{
+    @include mobile{
+      margin-left: 5px;
+    }
+      margin-left: 20px;
+  }
+  
+.darken{
+  background-color: black;
+  opacity: 0.8;
+    filter: alpha(opacity = 80); /*For IE8 and earlier*/ 
+}
+.enlarge{
+  width: 75px;
+  height: 75px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+.nav-enlarge{
+  @include mobile{
+    width: 60px;
+    height:60px;
+  }
+  width: 90px;
+  height: 90px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+.sidebar-off{
+  left: 0;
+}
+.wrapper{
+  .content-sidebar-off{
+    @include mobile {
+      width: 81.25%;
+      height: 87.5%;
+    }
+    width: 92.18%;
+    left: 0;
+    
+    .about-content-list{
+      @include mobile {
+        height: 79.52%;
+      }
+    }
+    
+    .content-wrap{
+      
+    }
+    
+  }
+}
+
+.magnify-icon{
+  margin: 90px 30px;
+  width: 60px;
+  height: 60px;
+  
+}
+.magnify-link{
+  font-size: 22px;
+  color: black;
+  margin-top: 103px;
+  margin-left: -114px;
+}
+.magnify-img{
+  /* margin: 0px; */
+}
+.magnify-prev-txt{
+  margin-top: 45px;
+  margin-left: 45px;
+  font-size: 14px;
+}
+.highlight{
+  background-color: yellow;
+}
+.main-dropzone{
+  background-color: #00FF00;
+  width:100%;
+}  
+  
+  
+  
+  
+  
+   
+   
+   
+     
+/* ==========================================================================
+   fancybox plugin adjustments
+   ========================================================================== */ 
+  .fancybox-overlay{
+    z-index: 300 !important;
+  }
+  .fancybox-desktop {
+    top: 60px !important;
+  }
+  #fancybox-thumbs{
+    width: 44px !important;
+    left: 967px !important;
+  }
+  #fancybox-thumbs ul{
+    width: 44px !important;
+    left: 0px !important; 
+  }
+  #fancybox-thumbs.bottom {
+    bottom: 282px !important;
+  }
+  
+    
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}

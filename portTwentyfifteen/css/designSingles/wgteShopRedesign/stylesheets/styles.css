@@ -1,0 +1,1741 @@
+/* http://meyerweb.com/eric/tools/css/reset/v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 5, ../sass/styles.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 26, ../sass/styles.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 33, ../sass/styles.scss */
+body {
+  line-height: 1;
+}
+
+/* line 37, ../sass/styles.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 40, ../sass/styles.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 43, ../sass/styles.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 48, ../sass/styles.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 54, ../sass/styles.scss */
+strong {
+  font-weight: bold;
+}
+
+/* =============================================================================================
+ HTML 5 media quaries that handle a variety of pixel densities that many mobile devices exibit
+ ===============================================================================================*/
+/* line 65, ../sass/styles.scss */
+#wrapper {
+  margin-top: 20px;
+}
+
+/*=======================================================
+ * header section including: logo, nav/menu bar, etc
+ * ======================================================
+ */
+/* line 75, ../sass/styles.scss */
+#header {
+  width: 100%;
+}
+
+/* line 78, ../sass/styles.scss */
+#logo_area {
+  height: 49px;
+  margin-bottom: 20px;
+  padding-left: 1.9825%;
+  padding-right: 1.9825%;
+}
+
+/* line 85, ../sass/styles.scss */
+#logo {
+  width: 32%;
+}
+
+/* line 90, ../sass/styles.scss */
+#slogan {
+  border-left: 1px solid #B3CC94;
+  margin-left: 10px;
+  padding: 9px 10px 0px 10px;
+  position: absolute;
+}
+
+/* line 96, ../sass/styles.scss */
+#logo span {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 14px;
+  line-height: 39px;
+}
+
+/* line 101, ../sass/styles.scss */
+#first {
+  width: 67%;
+  float: right;
+}
+
+/* line 105, ../sass/styles.scss */
+#npr_logo {
+  margin-left: 5px;
+  position: relative;
+  top: 6px;
+}
+
+/* line 112, ../sass/styles.scss */
+#heart_container {
+  height: 28px;
+  margin-left: 6.2%;
+  padding: 0px 1.3% 0px 1.3%;
+  position: absolute;
+  -moz-box-shadow: 1px 3px 1px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 6px 0px #202020;
+  box-shadow: 3px 3px 6px 0px #202020;
+  cursor: pointer;
+}
+
+/* line 122, ../sass/styles.scss */
+#heart_image {
+  position: relative;
+  top: 14px;
+}
+
+/* line 126, ../sass/styles.scss */
+#heart_container span {
+  position: relative;
+  top: 6px;
+  vertical-align: middle;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1.2em;
+  color: #007CC2;
+}
+
+/* line 134, ../sass/styles.scss */
+#social {
+  float: right;
+  margin-right: -5px;
+  position: relative;
+  top: 13px;
+}
+
+/* line 140, ../sass/styles.scss */
+#social span {
+  vertical-align: middle;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+}
+
+/* line 144, ../sass/styles.scss */
+#social img {
+  vertical-align: middle;
+}
+
+/* line 147, ../sass/styles.scss */
+#menu_button {
+  color: #FFF;
+}
+
+/* line 151, ../sass/styles.scss */
+#nav_wrapper {
+  background-color: #007CC2;
+  width: 100%;
+  height: 47px;
+  border-bottom: 5px solid #B3CC94;
+}
+
+/* line 157, ../sass/styles.scss */
+#main_nav {
+  max-width: 999px;
+  height: 0;
+  margin: 0px auto;
+}
+
+/* line 162, ../sass/styles.scss */
+.nav_list {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 166, ../sass/styles.scss */
+.menu {
+  display: none;
+}
+
+/* line 169, ../sass/styles.scss */
+.nav_item {
+  display: inline-block;
+  border-left: 1px solid #FFF;
+  padding: 14px 2.105% 14px 2.105%;
+}
+
+/* line 174, ../sass/styles.scss */
+.nav_list a {
+  color: #FFF;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1em;
+}
+
+/* line 180, ../sass/styles.scss */
+#listen_live1 {
+  display: none;
+}
+
+/* line 183, ../sass/styles.scss */
+#schedule {
+  display: none;
+}
+
+/* line 186, ../sass/styles.scss */
+#listen_live2 {
+  display: none;
+}
+
+/* line 189, ../sass/styles.scss */
+.search_box {
+  width: 21.5%;
+  display: inline-block;
+  height: 45px;
+  background-color: #FFF;
+}
+
+/* line 195, ../sass/styles.scss */
+.searchInput {
+  height: 43px;
+  border: 0px;
+  padding: 0px 0px 0px 6.654%;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #007CC2;
+  max-width: 66.2%;
+}
+
+/* line 205, ../sass/styles.scss */
+.searchButton {
+  float: right;
+  margin: 15px;
+}
+
+/*=======================================================
+ * Content section for home page/index.html
+ * ======================================================
+ */
+/* line 213, ../sass/styles.scss */
+#main_content_wrapper {
+  margin: 20px auto;
+  width: 96%;
+}
+
+/* line 219, ../sass/styles.scss */
+#highlights {
+  width: 65.042%;
+  height: 100%;
+  border-bottom: 1px solid #B3CC94;
+  padding-bottom: 19px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+/* line 227, ../sass/styles.scss */
+#mobile_highlights_section_head {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: -8px;
+  margin-bottom: 15px;
+}
+
+/* line 234, ../sass/styles.scss */
+.highlight_image {
+  margin-bottom: 10px;
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+/* line 242, ../sass/styles.scss */
+.highlights_section_head {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* line 248, ../sass/styles.scss */
+.highlight_headline {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1.875em;
+  font-weight: bold;
+  color: #007CC2;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+/* line 257, ../sass/styles.scss */
+.highlight_body_text {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1.125em;
+  color: #444444;
+  line-height: 21.5px;
+}
+
+/* line 263, ../sass/styles.scss */
+#articles {
+  width: 65.042%;
+}
+
+/* line 266, ../sass/styles.scss */
+#left_column {
+  width: 48.43%;
+  float: left;
+  margin-right: 3.125%;
+  margin-bottom: 20px;
+}
+
+/* line 272, ../sass/styles.scss */
+#right_column {
+  width: 48.43%;
+  float: right;
+  margin-bottom: 20px;
+}
+
+/* line 277, ../sass/styles.scss */
+.mobile_section_head {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: none;
+}
+
+/* line 284, ../sass/styles.scss */
+.article {
+  width: 100%;
+  border-bottom: 1px solid #B3CC94;
+  margin-bottom: 19px;
+  padding-bottom: 19px;
+}
+
+/* line 290, ../sass/styles.scss */
+.article_image {
+  margin-bottom: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* line 295, ../sass/styles.scss */
+.article_headline {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1.5em;
+  color: #007CC2;
+  cursor: pointer;
+}
+
+/* line 301, ../sass/styles.scss */
+.article_text {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 0.875em;
+  line-height: 17.25px;
+  margin-top: 5px;
+  padding-right: 9px;
+  color: #444444;
+}
+
+/*=======================================================
+ * shop content section including: the shop stuff
+ * ======================================================
+ */
+/* line 315, ../sass/styles.scss */
+#wrapper {
+  width: 97%;
+  overflow: hidden;
+  position: absolute;
+}
+
+/* line 321, ../sass/styles.scss */
+#shop_wrapper {
+  padding: 20px;
+  width: 96.09%;
+  margin: 0 auto;
+}
+
+/* line 326, ../sass/styles.scss */
+.shop_head {
+  padding-bottom: 15px;
+  width: 100%;
+  height: 25px;
+  border-bottom: 1px solid #B3CC94;
+  font-size: 24px;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+}
+
+/* line 334, ../sass/styles.scss */
+#shop_head_txt {
+  float: left;
+}
+
+/* line 337, ../sass/styles.scss */
+#view_cart_txt {
+  float: right;
+  color: #007CC2;
+}
+
+/* line 341, ../sass/styles.scss */
+.item_category {
+  overflow: hidden;
+  width: 100%;
+  height: 390px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid  #B3CC94;
+}
+
+/* line 349, ../sass/styles.scss */
+.item_category div {
+  display: inline-block;
+}
+
+/* line 352, ../sass/styles.scss */
+li.shop_item:last-child {
+  margin-right: 0;
+}
+
+/* line 355, ../sass/styles.scss */
+.category_head {
+  margin: 20px 0;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  color: #007cc2;
+}
+
+/* line 361, ../sass/styles.scss */
+.shop_item_list {
+  width: 982px;
+  height: 314px;
+}
+
+/* line 365, ../sass/styles.scss */
+.shop_item {
+  width: 314px;
+  height: 314px;
+  margin-right: 20px;
+  float: left;
+  background-color: #007cc2;
+  opacity: .2;
+}
+
+/* line 374, ../sass/styles.scss */
+.third_item {
+  margin-right: 0;
+}
+
+/*=======================================================
+ * sidebar section including: brief schedule, listen live, full schedule and program guide buttons, sponsor spots
+ * ======================================================
+ */
+/* line 384, ../sass/styles.scss */
+#sidebar {
+  width: 33%;
+  float: right;
+}
+
+/* line 388, ../sass/styles.scss */
+.schedule_container {
+  margin-bottom: 20px;
+  height: 389px;
+  overflow: hidden;
+}
+
+/* line 393, ../sass/styles.scss */
+#listen_live_button {
+  text-align: center;
+  color: #FFF;
+  width: 100%;
+  background-color: #007CC2;
+  border: 0;
+  height: 45px;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* line 404, ../sass/styles.scss */
+#radio_button {
+  text-align: center;
+  color: #007CC2;
+  width: 50%;
+  background-color: #FFF;
+  border: 0;
+  height: 45px;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 18px;
+  float: left;
+  cursor: pointer;
+}
+
+/* line 416, ../sass/styles.scss */
+#tv_button {
+  text-align: center;
+  color: #FFF;
+  width: 50%;
+  background-color: #b9b9b9;
+  border: 0;
+  height: 45px;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* line 427, ../sass/styles.scss */
+#abbreviated_schedule {
+  border-left: 1px solid #B9B9B9;
+  border-right: 1px solid #B9B9B9;
+  height: 65.29%;
+  overflow: hidden;
+}
+
+/* line 433, ../sass/styles.scss */
+.time_stamp_container {
+  float: left;
+  width: 29.375%;
+  height: 100%;
+}
+
+/* line 438, ../sass/styles.scss */
+.time_stamp {
+  border-bottom: 1px solid #FFF;
+  height: 8.6%;
+  padding: 10px 18.72% 94px;
+  text-align: center;
+  background-color: #B9B9B9;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  color: #FFF;
+}
+
+/* line 447, ../sass/styles.scss */
+.time {
+  max-width: 45px;
+  width: 100%;
+  height: 22px;
+  margin: auto;
+}
+
+/* line 453, ../sass/styles.scss */
+.time strong {
+  font-size: 1.5em;
+  float: left;
+  font-weight: normal;
+}
+
+/* line 460, ../sass/styles.scss */
+.min_abbrv {
+  float: left;
+  width: 33%;
+  height: 18px;
+  line-height: 9px;
+  font-size: .625em;
+  position: relative;
+  top: 3px;
+  margin-left: 4.1%;
+}
+
+/* line 470, ../sass/styles.scss */
+.min_abbrv strong {
+  font-size: 12px;
+}
+
+/* line 473, ../sass/styles.scss */
+.shows_container {
+  height: 100%;
+}
+
+/* line 476, ../sass/styles.scss */
+.shows {
+  margin-left: 35.53%;
+  margin-right: 6.289%;
+}
+
+/* line 481, ../sass/styles.scss */
+.break {
+  padding: 9px 0px;
+  border-bottom: 1px dotted #B3CC94;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 12px;
+  line-height: 14.5px;
+}
+
+/* line 488, ../sass/styles.scss */
+#last_break {
+  border: 0;
+}
+
+/* line 492, ../sass/styles.scss */
+#full_schedule_button {
+  border: 0;
+  width: 49.2%;
+  height: 31px;
+  padding-top: 14px;
+  float: left;
+  background-color: #007CC2;
+  text-align: center;
+  color: #FFF;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 506, ../sass/styles.scss */
+#prog_button {
+  border-right: 1px solid #007CC2;
+  border-left: 1px solid white;
+  width: 50%;
+  height: 31px;
+  padding-top: 14px;
+  float: left;
+  background-color: #007CC2;
+  text-align: center;
+  color: #FFF;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 521, ../sass/styles.scss */
+.ad {
+  background-color: #007CC2;
+  margin-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*=======================================================
+ * footer section includes: additional nav, logo, legal copy, additional links
+ * ======================================================
+ */
+/* line 533, ../sass/styles.scss */
+.footer {
+  width: 100%;
+  background-color: #007CC2;
+  clear: both;
+}
+
+/* line 539, ../sass/styles.scss */
+.footer_content {
+  margin: 0 auto;
+  width: 770px;
+  padding: 30px;
+}
+
+/* line 544, ../sass/styles.scss */
+#footer_nav_wrapper {
+  width: 100%;
+  background-color: #FFFFFF;
+  position: relative;
+  bottom: -1px;
+}
+
+/* line 550, ../sass/styles.scss */
+#footer_nav {
+  max-width: 999px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+/* line 556, ../sass/styles.scss */
+.footer_nav_list {
+  margin-left: 4.88%;
+}
+
+/* line 559, ../sass/styles.scss */
+.footer_nav_item {
+  display: inline-block;
+  height: 31px;
+  border-left: 1px solid #007CC2;
+  padding: 14px 2.105% 0px 2.105%;
+}
+
+/* line 565, ../sass/styles.scss */
+.footer_nav_list a {
+  color: #007CC2;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1em;
+}
+
+/* line 571, ../sass/styles.scss */
+#last_footer_nav {
+  border-right: 1px solid #007CC2;
+}
+
+/*shop footer*/
+/* line 580, ../sass/styles.scss */
+.shop_footer {
+  border-top: 5px solid #B3CC94;
+  width: 100%;
+  background-color: #007CC2;
+}
+
+/* line 585, ../sass/styles.scss */
+.shop_footer_content {
+  margin: 0 auto;
+  width: 710px;
+  padding: 30px;
+}
+
+/* line 591, ../sass/styles.scss */
+#shop_footer_links {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* line 595, ../sass/styles.scss */
+.shop_footer_link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #007CC2;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 24px;
+}
+
+/* line 602, ../sass/styles.scss */
+#order_options {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Book', 'Quattrocento Sans', sans-serif;
+  font-size: 24px;
+}
+
+/* line 608, ../sass/styles.scss */
+.footer_logo_area {
+  float: left;
+  border-right: 1px solid #B3CC94;
+  padding-right: 9px;
+  margin-right: 9px;
+}
+
+/* line 614, ../sass/styles.scss */
+#footer_logo_image {
+  width: 100%;
+}
+
+/* line 617, ../sass/styles.scss */
+#footer_links {
+  padding-top: 20px;
+}
+
+/* line 620, ../sass/styles.scss */
+.link_item {
+  display: inline;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: .75em;
+  color: white;
+  border-right: 1px solid white;
+  padding: 0px 9px 0px 9px;
+}
+
+/* line 628, ../sass/styles.scss */
+.link_item a {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 634, ../sass/styles.scss */
+#first_link_item {
+  padding-left: 0;
+}
+
+/* line 638, ../sass/styles.scss */
+#last_link_item {
+  border-right: 0;
+}
+
+/*=======================================================
+ * mobile nav menu 
+ * ======================================================
+ */
+/* line 651, ../sass/styles.scss */
+#menu {
+  display: none;
+  height: 41px;
+  padding: 4px 10px 0px 5px;
+  float: left;
+  cursor: pointer;
+}
+
+/* line 658, ../sass/styles.scss */
+#menu h3 {
+  float: right;
+  color: #FFF;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1.3em;
+  height: 18px;
+  margin: 9px 5px 10px 5px;
+  letter-spacing: 1px;
+}
+
+/* line 668, ../sass/styles.scss */
+#menu h4 {
+  display: inline-block;
+  float: left;
+  text-indent: -9000px;
+  border-top: double 10px #FFF;
+  border-bottom: solid 3px #FFF;
+  width: 20px;
+  height: 4px;
+  cursor: pointer;
+  padding: 0;
+  margin: 10px;
+}
+
+/* line 681, ../sass/styles.scss */
+#menu_button {
+  display: none;
+  width: 8.39%;
+  padding: 14px 2.105% 14px 2.105%;
+  color: #FFF;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1em;
+  background-color: #007CC2;
+  float: right;
+  text-align: center;
+  -moz-box-shadow: 2px 2px 1px 0px #202020;
+  -webkit-box-shadow: 2px 2px 1px 0px #202020;
+  box-shadow: 2px 2px 1px 0px #202020;
+}
+
+/* line 700, ../sass/styles.scss */
+#menu_wrapper {
+  position: absolute;
+  z-index: 120;
+  top: 142px;
+  background-color: #FFF;
+  width: 100%;
+  -moz-box-shadow: 0px 1px 7px 0px #202020;
+  -webkit-box-shadow: 0px 1px 7px 0px #202020;
+  box-shadow: 0px 1px 7px 0px #202020;
+  display: none;
+}
+
+/* line 711, ../sass/styles.scss */
+#nav_menu {
+  width: 79.1%;
+  height: 145px;
+  padding: 40px 10.4% 5px;
+  overflow: hidden;
+}
+
+/* line 719, ../sass/styles.scss */
+#nav_menu ul {
+  padding-left: 0px;
+}
+
+/* line 722, ../sass/styles.scss */
+#nav_menu li {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+/* line 726, ../sass/styles.scss */
+#nav_menu a {
+  text-decoration: none;
+  font-family: 'Franklin Gothic Book', 'Quattrocento Sans', Helvetica, sans-serif;
+  color: #007CC2;
+}
+
+/* line 731, ../sass/styles.scss */
+.menu_column {
+  width: 11.33%;
+  float: left;
+}
+
+/* line 735, ../sass/styles.scss */
+#menu_left_column {
+  margin-right: 23.19%;
+}
+
+/* line 738, ../sass/styles.scss */
+#menu_middle_column {
+  margin-right: 23.19%;
+}
+
+/* line 741, ../sass/styles.scss */
+#menu_right_column ul {
+  margin-left: 80.27%;
+}
+
+/* line 744, ../sass/styles.scss */
+.line_break {
+  width: 100%;
+  border-bottom: 1px solid #777;
+}
+
+/* line 748, ../sass/styles.scss */
+#search_container {
+  height: 81px;
+  padding: 20px 10.19%;
+}
+
+/* line 753, ../sass/styles.scss */
+#searchForm_container {
+  height: 44px;
+  width: 100%;
+}
+
+/* line 757, ../sass/styles.scss */
+#menu_searchInput {
+  width: 73.3%;
+  height: 40px;
+  padding-left: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  border-right: 1px solid #007CC2;
+  color: #007CC2;
+  font-size: .9em;
+  float: left;
+}
+
+/* line 769, ../sass/styles.scss */
+#menu_searchButton {
+  margin: 15px 17px;
+  position: absolute;
+  height: 16px;
+  width: 23px;
+}
+
+/* line 775, ../sass/styles.scss */
+#blue_box {
+  float: left;
+  width: 58px;
+  height: 44px;
+  background-color: #007CC2;
+}
+
+/* line 781, ../sass/styles.scss */
+#menu_close {
+  float: right;
+  border: 1px solid #007CC2;
+  background-color: #FFF;
+  color: #007CC2;
+  position: relative;
+  bottom: -13px;
+  margin-right: 2%;
+}
+
+/*=======================================================
+* HTML 5 Media Queries
+* ======================================================
+*/
+/*==========================================================================
+  media queries
+  ==========================================================================*/
+/*==========================================================================
+   320px width mobile device styles
+  ==========================================================================*/
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 813, ../sass/styles.scss */
+  #wrapper {
+    width: 81.25%;
+  }
+}
+
+/*headers*/
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 819, ../sass/styles.scss */
+  #slogan {
+    top: 0px;
+    left: 170px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 826, ../sass/styles.scss */
+  .nav_item {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 831, ../sass/styles.scss */
+  #menu {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 836, ../sass/styles.scss */
+  #menu_wrapper {
+    height: 339px;
+    top: 116px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 842, ../sass/styles.scss */
+  #npr_logo {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 847, ../sass/styles.scss */
+  #heart_container {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 852, ../sass/styles.scss */
+  #social {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 857, ../sass/styles.scss */
+  .search_box {
+    display: none;
+  }
+}
+
+/*content*/
+/*home*/
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 864, ../sass/styles.scss */
+  #main_content_wrapper {
+    margin: 20px 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 870, ../sass/styles.scss */
+  #highlights {
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 875, ../sass/styles.scss */
+  #sidebar {
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 880, ../sass/styles.scss */
+  #abbreviated_schedule {
+    border-right: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 885, ../sass/styles.scss */
+  #shows_container {
+    margin-right: 0px;
+    margin-left: 90px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 892, ../sass/styles.scss */
+  .shows {
+    height: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 899, ../sass/styles.scss */
+  #articles {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 905, ../sass/styles.scss */
+  #left_column {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 911, ../sass/styles.scss */
+  #right_column {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 917, ../sass/styles.scss */
+  .article {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 922, ../sass/styles.scss */
+  #sponsor_section {
+    height: 818px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 927, ../sass/styles.scss */
+  #column-l {
+    height: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 933, ../sass/styles.scss */
+  #column-r {
+    height: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 939, ../sass/styles.scss */
+  .ad-text {
+    position: relative;
+    top: 40%;
+  }
+}
+
+/*shop*/
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 949, ../sass/styles.scss */
+  #shop_wrapper {
+    width: 100%;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 957, ../sass/styles.scss */
+  .shop_head {
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 963, ../sass/styles.scss */
+  .shop_item {
+    width: 235.5px;
+    height: 235.5px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 969, ../sass/styles.scss */
+  .item_category {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 84.5%;
+    height: 285.5px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 977, ../sass/styles.scss */
+  .category_head {
+    margin-top: 5px;
+    font-size: 24px;
+  }
+}
+
+/*footers*/
+/*main-footer*/
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 986, ../sass/styles.scss */
+  .footer_content {
+    width: 200px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 991, ../sass/styles.scss */
+  .footer_logo_area {
+    width: 152px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 0;
+    float: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1000, ../sass/styles.scss */
+  #footer_links {
+    padding-top: 0px;
+    text-align: center;
+  }
+}
+
+/*shop-footer*/
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1007, ../sass/styles.scss */
+  .shop_footer_content {
+    width: 200px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1012, ../sass/styles.scss */
+  .shop_footer_link {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1017, ../sass/styles.scss */
+  #order_options {
+    font-size: 20px;
+  }
+}
+
+/*==========================================================================
+   768px width mobile device styles
+  ==========================================================================*/
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1032, ../sass/styles.scss */
+  #wrapper {
+    width: 91%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1037, ../sass/styles.scss */
+  .home-wrapper {
+    height: 3570px;
+  }
+}
+
+/*header*/
+/* line 1043, ../sass/styles.scss */
+#logo_area {
+  width: 310px;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1046, ../sass/styles.scss */
+  #logo {
+    width: 42%;
+  }
+}
+
+/* line 1051, ../sass/styles.scss */
+#slogan {
+  top: 0px;
+  left: 178px;
+  height: 40px;
+}
+
+/* line 1056, ../sass/styles.scss */
+#slogan span {
+  line-height: 40px;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1059, ../sass/styles.scss */
+  #first {
+    width: 110px;
+    position: absolute;
+    left: 340px;
+    top: 0px;
+    float: none;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1068, ../sass/styles.scss */
+  #first #heart_container {
+    margin-left: 0;
+    width: 90px;
+    padding: 10px;
+    position: absolute;
+    left: 126px;
+    top: 0px;
+  }
+}
+/* line 1078, ../sass/styles.scss */
+#first #heart_image {
+  position: relative;
+  top: 3px;
+}
+/* line 1082, ../sass/styles.scss */
+#first #heart_container span {
+  position: relative;
+  top: -4px;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1087, ../sass/styles.scss */
+  div#social {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1092, ../sass/styles.scss */
+  .nav_list {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1098, ../sass/styles.scss */
+  .nav_item {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1103, ../sass/styles.scss */
+  #menu_wrapper {
+    top: 122px;
+  }
+}
+
+/*content*/
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1110, ../sass/styles.scss */
+  #main_content_wrapper {
+    width: 94.28%;
+    margin: 20px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1116, ../sass/styles.scss */
+  #highlights {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1122, ../sass/styles.scss */
+  #sidebar {
+    width: 100%;
+    float: none;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1129, ../sass/styles.scss */
+  #schedule_container {
+    margin-right: 20px;
+    width: 44%;
+    position: absolute;
+    float: left;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1138, ../sass/styles.scss */
+  #shows_container {
+    height: 100%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1143, ../sass/styles.scss */
+  .time_stamp {
+    height: 8.7%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1148, ../sass/styles.scss */
+  #sponsor_section {
+    width: 50%;
+    height: 818px;
+    position: relative;
+    float: right;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1157, ../sass/styles.scss */
+  #articles {
+    width: 46.96%;
+    margin-right: 20px;
+    float: left;
+    position: relative;
+    top: -409px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1166, ../sass/styles.scss */
+  #column-l {
+    width: 100%;
+    height: 389px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1173, ../sass/styles.scss */
+  #column-r {
+    width: 100%;
+    height: 389px;
+  }
+}
+
+/* line 1179, ../sass/styles.scss */
+.ad {
+  width: 100%;
+  height: 47.42%;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1185, ../sass/styles.scss */
+  #left_column {
+    width: 100%;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1191, ../sass/styles.scss */
+  #right_column {
+    width: 100%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1196, ../sass/styles.scss */
+  #schedule {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1201, ../sass/styles.scss */
+  #listen_live2 {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1206, ../sass/styles.scss */
+  #television {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1211, ../sass/styles.scss */
+  #radio {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1216, ../sass/styles.scss */
+  #menu {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1221, ../sass/styles.scss */
+  #support {
+    border-right: 1px solid #FFF;
+  }
+}
+
+/*shop*/
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1227, ../sass/styles.scss */
+  #shop {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1232, ../sass/styles.scss */
+  .search_box {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1237, ../sass/styles.scss */
+  #shop_wrapper {
+    width: 93.63%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1242, ../sass/styles.scss */
+  .item_category {
+    height: 285.5px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1247, ../sass/styles.scss */
+  .category_head {
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1255, ../sass/styles.scss */
+  .shop_item_list li {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1260, ../sass/styles.scss */
+  .shop_item {
+    width: 235.5px;
+    height: 235.5px;
+    display: inline-block;
+  }
+}
+
+/*footers*/
+/*main-footer*/
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1272, ../sass/styles.scss */
+  .footer {
+    position: absolute;
+    top: 3294px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1278, ../sass/styles.scss */
+  .footer_content {
+    width: 529px;
+  }
+}
+
+/*shop-footer*/
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1290, ../sass/styles.scss */
+  .shop_footer_content {
+    width: 89.82%;
+    padding: 35px;
+    background-color: #007CC2;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1297, ../sass/styles.scss */
+  #footer_links {
+    padding-top: 10px;
+  }
+}
+
+/*==========================================================================
+  1280px width widescreen device styles
+ ==========================================================================*/
+/*=======================================================
+* Content section for mobile schedule page using media queries
+*/
+@media screen and (min-width: 320px) {
+  /* line 1318, ../sass/styles.scss */
+  .content_wrapper {
+    margin: 15px 5.4%;
+  }
+
+  /* line 1321, ../sass/styles.scss */
+  #mobile_page_headline {
+    float: left;
+    width: 42.86%;
+    font-family: 'Franklin Gothic Book', 'Quattrocento Sans', Helvetica, sans-serif;
+    font-size: 1.6em;
+    margin: 2px 0 15px 0;
+  }
+
+  /* line 1328, ../sass/styles.scss */
+  .tv_radio_toggle {
+    float: right;
+    width: 21.42%;
+    margin-bottom: 15px;
+    padding: 3px 0;
+    border: 0;
+    font-family: 'Franklin Gothic Book', 'Quattrocento Sans', Helvetica, sans-serif;
+    font-size: .9em;
+    color: white;
+    background-color: #007CC2;
+    -moz-box-shadow: 2px 2px 3px 0px #202020;
+    -webkit-box-shadow: 2px 2px 3px 0px #202020;
+    box-shadow: 2px 2px 3px 0px #202020;
+  }
+
+  /* line 1342, ../sass/styles.scss */
+  #tv_toggle {
+    display: none;
+  }
+
+  /* line 1345, ../sass/styles.scss */
+  #schedule_wrapper {
+    clear: both;
+    font-family: 'Franklin Gothic Book', 'Quattrocento Sans', Helvetica, sans-serif;
+    background-color: #959595;
+    overflow: hidden;
+  }
+
+  /* line 1351, ../sass/styles.scss */
+  #schedule_head {
+    height: 17px;
+    padding: 9px 10px;
+    border-bottom: 1px solid white;
+  }
+
+  /* line 1356, ../sass/styles.scss */
+  #left_arrow {
+    float: left;
+    border: 0;
+    padding: 0;
+    background-color: #959595;
+    margin: 0px;
+  }
+
+  /* line 1363, ../sass/styles.scss */
+  #date {
+    float: left;
+    margin-left: 34%;
+    font-size: 1.2em;
+    color: #fff;
+  }
+
+  /* line 1369, ../sass/styles.scss */
+  #right_arrow {
+    float: right;
+    border: 0;
+    padding: 0;
+    background-color: #959595;
+    margin: 0px;
+  }
+
+  /* line 1376, ../sass/styles.scss */
+  #radio_schedule {
+    display: none;
+  }
+
+  /* line 1379, ../sass/styles.scss */
+  .time_column {
+    width: 20.7%;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+  }
+
+  /* line 1385, ../sass/styles.scss */
+  table {
+    width: 100%;
+  }
+
+  /* line 1388, ../sass/styles.scss */
+  th, td {
+    padding: 10px;
+    color: white;
+    vertical-align: top;
+  }
+
+  /* line 1393, ../sass/styles.scss */
+  td {
+    border-bottom: 1px solid white;
+  }
+}
+/*=======================================================
+ * single page specific adjustments to tmayer site
+ * ======================================================
+ */
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1404, ../sass/styles.scss */
+  .wrapper .mainContent {
+    height: 61%;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1409, ../sass/styles.scss */
+  .wrapper .shopMain {
+    height: 44%;
+  }
+}
+/* line 1415, ../sass/styles.scss */
+.wrapper .shopMain .content-sidebar-off include tablet {
+  height: 55%;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1419, ../sass/styles.scss */
+  .wrapper .content-sidebar-off {
+    height: 88%;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1419, ../sass/styles.scss */
+  .wrapper .content-sidebar-off {
+    height: 72%;
+  }
+}
+
+
+
+
+
+

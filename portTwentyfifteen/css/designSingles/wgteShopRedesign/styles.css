@@ -1,0 +1,2087 @@
+/* http://meyerweb.com/eric/tools/css/reset/v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 5, sass/styles.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 26, sass/styles.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 33, sass/styles.scss */
+body {
+  line-height: 1;
+}
+
+/* line 37, sass/styles.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 40, sass/styles.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 43, sass/styles.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 48, sass/styles.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 54, sass/styles.scss */
+strong {
+  font-weight: bold;
+}
+
+/* =============================================================================================
+ HTML 5 media quaries that handle a variety of pixel densities that many mobile devices exibit
+ ===============================================================================================*/
+/* line 65, sass/styles.scss */
+#wrapper {
+  margin-top: 20px;
+}
+
+/*=======================================================
+ * header section including: logo, nav/menu bar, etc
+ * ======================================================
+ */
+/* line 75, sass/styles.scss */
+#header {
+  width: 100%;
+}
+
+/* line 87, sass/styles.scss */
+#heart_image {
+  position: relative;
+  top: 3px;
+}
+
+/* line 91, sass/styles.scss */
+#heart_container span {
+  position: relative;
+  top: -4px;
+}
+
+/* line 98, sass/styles.scss */
+#logo_area {
+  width: 95%;
+  height: 49px;
+  margin-bottom: 20px;
+  padding-left: 1.9825%;
+  padding-right: 1.9825%;
+}
+
+/* line 106, sass/styles.scss */
+#logo {
+  width: 32%;
+}
+
+/* line 111, sass/styles.scss */
+#slogan {
+  height: 40px;
+  border-left: 1px solid #B3CC94;
+  margin-left: 10px;
+  padding: 9px 10px 0px 10px;
+  position: absolute;
+  top: 0px;
+  left: 178px;
+}
+
+/* line 120, sass/styles.scss */
+#slogan span {
+  line-height: 40px;
+}
+
+/* line 123, sass/styles.scss */
+#logo span {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 14px;
+  line-height: 39px;
+}
+
+/* line 128, sass/styles.scss */
+#first {
+  width: 63.95%;
+  float: right;
+  position: absolute;
+  left: 340px;
+  top: 0px;
+}
+
+/* line 135, sass/styles.scss */
+#npr_logo {
+  margin-left: 5px;
+  position: relative;
+  top: 6px;
+}
+
+/* line 142, sass/styles.scss */
+#heart_container {
+  margin-left: 0;
+  width: 90px;
+  height: 28px;
+  padding: 10px;
+  position: absolute;
+  left: 126px;
+  top: 0px;
+  -moz-box-shadow: 1px 3px 1px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 6px 0px #202020;
+  box-shadow: 3px 3px 6px 0px #202020;
+  cursor: pointer;
+}
+
+/* line 155, sass/styles.scss */
+#heart_image {
+  position: relative;
+  top: 14px;
+}
+
+/* line 159, sass/styles.scss */
+#heart_container span {
+  position: relative;
+  top: 6px;
+  vertical-align: middle;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1.2em;
+  color: #007CC2;
+}
+
+/* line 167, sass/styles.scss */
+#social {
+  float: right;
+  position: absolute;
+  top: 0px;
+  right: 30px;
+}
+
+/* line 173, sass/styles.scss */
+#social span {
+  vertical-align: middle;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+}
+
+/* line 177, sass/styles.scss */
+#social img {
+  vertical-align: middle;
+}
+
+/* line 180, sass/styles.scss */
+#menu_button {
+  color: #FFF;
+}
+
+/* line 184, sass/styles.scss */
+#nav_wrapper {
+  background-color: #007CC2;
+  width: 100%;
+  height: 47px;
+  border-bottom: 5px solid #B3CC94;
+}
+
+/* line 190, sass/styles.scss */
+#main_nav {
+  max-width: 999px;
+  height: 0;
+  margin: 0px auto;
+}
+
+/* line 195, sass/styles.scss */
+.nav_list {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 199, sass/styles.scss */
+.menu {
+  display: none;
+}
+
+/* line 202, sass/styles.scss */
+.nav_item {
+  display: inline-block;
+  border-left: 1px solid #FFF;
+  padding: 14px 2.105% 14px 2.105%;
+}
+
+/* line 207, sass/styles.scss */
+.nav_list a {
+  color: #FFF;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1em;
+}
+
+/* line 213, sass/styles.scss */
+#listen_live1 {
+  display: none;
+}
+
+/* line 216, sass/styles.scss */
+#schedule {
+  display: none;
+}
+
+/* line 219, sass/styles.scss */
+#listen_live2 {
+  display: none;
+}
+
+/* line 222, sass/styles.scss */
+.search_box {
+  width: 21.5%;
+  display: inline-block;
+  height: 45px;
+  background-color: #FFF;
+}
+
+/* line 228, sass/styles.scss */
+.searchInput {
+  height: 43px;
+  border: 0px;
+  padding: 0px 0px 0px 6.654%;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #007CC2;
+  max-width: 66.2%;
+}
+
+/* line 238, sass/styles.scss */
+.searchButton {
+  float: right;
+  margin: 15px;
+}
+
+/*=======================================================
+ * Content section for home page/index.html
+ * ======================================================
+ */
+/* line 246, sass/styles.scss */
+#main_content_wrapper {
+  margin: 20px auto;
+  width: 96%;
+}
+
+/* line 252, sass/styles.scss */
+#highlights {
+  width: 65.042%;
+  height: 100%;
+  border-bottom: 1px solid #B3CC94;
+  padding-bottom: 19px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+/* line 260, sass/styles.scss */
+#mobile_highlights_section_head {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: -8px;
+  margin-bottom: 15px;
+}
+
+/* line 267, sass/styles.scss */
+.highlight_image {
+  margin-bottom: 10px;
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+/* line 275, sass/styles.scss */
+.highlights_section_head {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* line 281, sass/styles.scss */
+.highlight_headline {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1.875em;
+  font-weight: bold;
+  color: #007CC2;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+/* line 290, sass/styles.scss */
+.highlight_body_text {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1.125em;
+  color: #444444;
+  line-height: 21.5px;
+}
+
+/* line 296, sass/styles.scss */
+#articles {
+  width: 65.042%;
+}
+
+/* line 299, sass/styles.scss */
+#left_column {
+  width: 48.43%;
+  float: left;
+  margin-right: 3.125%;
+  margin-bottom: 20px;
+}
+
+/* line 305, sass/styles.scss */
+#right_column {
+  width: 48.43%;
+  float: right;
+  margin-bottom: 20px;
+}
+
+/* line 310, sass/styles.scss */
+.mobile_section_head {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: none;
+}
+
+/* line 317, sass/styles.scss */
+.article {
+  width: 100%;
+  border-bottom: 1px solid #B3CC94;
+  margin-bottom: 19px;
+  padding-bottom: 19px;
+}
+
+/* line 323, sass/styles.scss */
+.article_image {
+  margin-bottom: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* line 328, sass/styles.scss */
+.article_headline {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1.5em;
+  color: #007CC2;
+  cursor: pointer;
+}
+
+/* line 334, sass/styles.scss */
+.article_text {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 0.875em;
+  line-height: 17.25px;
+  margin-top: 5px;
+  padding-right: 9px;
+  color: #444444;
+}
+
+/*=======================================================
+ * shop content section including: the shop stuff
+ * ======================================================
+ */
+/* line 350, sass/styles.scss */
+#wrapper {
+  width: 97%;
+  overflow: hidden;
+  position: absolute;
+}
+
+/* line 356, sass/styles.scss */
+#shop_wrapper {
+  padding: 20px;
+  width: 96.09%;
+  margin: 0 auto;
+}
+
+/* line 361, sass/styles.scss */
+.shop_head {
+  padding-bottom: 15px;
+  width: 100%;
+  height: 25px;
+  border-bottom: 1px solid #B3CC94;
+  font-size: 24px;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+}
+
+/* line 369, sass/styles.scss */
+#shop_head_txt {
+  float: left;
+}
+
+/* line 372, sass/styles.scss */
+#view_cart_txt {
+  float: right;
+  color: #007CC2;
+}
+
+/* line 376, sass/styles.scss */
+.item_category {
+  overflow: hidden;
+  width: 100%;
+  height: 380px;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid  #B3CC94;
+}
+
+/* line 384, sass/styles.scss */
+.item_category div {
+  display: inline-block;
+}
+
+/* line 387, sass/styles.scss */
+li.shop_item:last-child {
+  margin-right: 0;
+}
+
+/* line 390, sass/styles.scss */
+.category_head {
+  margin: 10px 0;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  color: #007cc2;
+}
+
+/* line 396, sass/styles.scss */
+.shop_item_list_wrap {
+  width: 100%;
+  height: 329px;
+  position: relative;
+  top: -314px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+/* line 404, sass/styles.scss */
+.shop_item_list {
+  width: 1650px;
+  height: 314px;
+  clear: both;
+  position: relative;
+}
+
+/* line 411, sass/styles.scss */
+.shop_item {
+  width: 314px;
+  height: 314px;
+  margin-right: 20px;
+  float: left;
+  background-color: #007cc2;
+  opacity: .2;
+}
+
+/* line 420, sass/styles.scss */
+.third_item {
+  margin-right: 0;
+}
+
+/* line 423, sass/styles.scss */
+.item_category_nav {
+  width: 105px;
+  height: 314px;
+  position: relative;
+  opacity: .5;
+  background-color: black;
+}
+
+/* line 430, sass/styles.scss */
+.prev_button_wrap {
+  float: left;
+  top: 0px;
+  z-index: 100;
+}
+
+/* line 438, sass/styles.scss */
+.next_button_wrap {
+  float: right;
+  top: -646px;
+}
+
+/* line 442, sass/styles.scss */
+.category_nav_button {
+  margin: 135px 44px;
+  width: 22px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  position: relative;
+  z-index: 200;
+}
+
+/* line 452, sass/styles.scss */
+.next_button {
+  background-image: url("../../../img/shop/next_arrow.png");
+}
+
+/* line 455, sass/styles.scss */
+.prev_button {
+  background-image: url("../../../img/shop/previous_arrow.png");
+}
+
+/*=======================================================
+ * sidebar section including: brief schedule, listen live, full schedule and program guide buttons, sponsor spots
+ * ======================================================
+ */
+/* line 465, sass/styles.scss */
+#sidebar {
+  width: 33%;
+  float: right;
+}
+
+/* line 469, sass/styles.scss */
+.schedule_container {
+  margin-bottom: 20px;
+  height: 389px;
+  overflow: hidden;
+}
+
+/* line 474, sass/styles.scss */
+#listen_live_button {
+  text-align: center;
+  color: #FFF;
+  width: 100%;
+  background-color: #007CC2;
+  border: 0;
+  height: 45px;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* line 485, sass/styles.scss */
+#radio_button {
+  text-align: center;
+  color: #007CC2;
+  width: 50%;
+  background-color: #FFF;
+  border: 0;
+  height: 45px;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 18px;
+  float: left;
+  cursor: pointer;
+}
+
+/* line 497, sass/styles.scss */
+#tv_button {
+  text-align: center;
+  color: #FFF;
+  width: 50%;
+  background-color: #b9b9b9;
+  border: 0;
+  height: 45px;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* line 508, sass/styles.scss */
+#abbreviated_schedule {
+  border-left: 1px solid #B9B9B9;
+  border-right: 1px solid #B9B9B9;
+  height: 65.29%;
+  overflow: hidden;
+}
+
+/* line 514, sass/styles.scss */
+.time_stamp_container {
+  float: left;
+  width: 29.375%;
+  height: 100%;
+}
+
+/* line 519, sass/styles.scss */
+.time_stamp {
+  border-bottom: 1px solid #FFF;
+  height: 8.6%;
+  padding: 10px 18.72% 94px;
+  text-align: center;
+  background-color: #B9B9B9;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  color: #FFF;
+}
+
+/* line 528, sass/styles.scss */
+.time {
+  max-width: 45px;
+  width: 100%;
+  height: 22px;
+  margin: auto;
+}
+
+/* line 534, sass/styles.scss */
+.time strong {
+  font-size: 1.5em;
+  float: left;
+  font-weight: normal;
+}
+
+/* line 541, sass/styles.scss */
+.min_abbrv {
+  float: left;
+  width: 33%;
+  height: 18px;
+  line-height: 9px;
+  font-size: .625em;
+  position: relative;
+  top: 3px;
+  margin-left: 4.1%;
+}
+
+/* line 551, sass/styles.scss */
+.min_abbrv strong {
+  font-size: 12px;
+}
+
+/* line 554, sass/styles.scss */
+.shows_container {
+  height: 100%;
+}
+
+/* line 557, sass/styles.scss */
+.shows {
+  margin-left: 35.53%;
+  margin-right: 6.289%;
+}
+
+/* line 562, sass/styles.scss */
+.break {
+  padding: 9px 0px;
+  border-bottom: 1px dotted #B3CC94;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 12px;
+  line-height: 14.5px;
+}
+
+/* line 569, sass/styles.scss */
+#last_break {
+  border: 0;
+}
+
+/* line 573, sass/styles.scss */
+#full_schedule_button {
+  border: 0;
+  width: 49.2%;
+  height: 31px;
+  padding-top: 14px;
+  float: left;
+  background-color: #007CC2;
+  text-align: center;
+  color: #FFF;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 587, sass/styles.scss */
+#prog_button {
+  border-right: 1px solid #007CC2;
+  border-left: 1px solid white;
+  width: 50%;
+  height: 31px;
+  padding-top: 14px;
+  float: left;
+  background-color: #007CC2;
+  text-align: center;
+  color: #FFF;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 602, sass/styles.scss */
+.ad {
+  background-color: #007CC2;
+  margin-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*=======================================================
+ * footer section includes: additional nav, logo, legal copy, additional links
+ * ======================================================
+ */
+/* line 614, sass/styles.scss */
+.footer {
+  width: 100%;
+  background-color: #007CC2;
+  clear: both;
+}
+
+/* line 620, sass/styles.scss */
+.footer_content {
+  margin: 0 auto;
+  width: 770px;
+  padding: 30px;
+}
+
+/* line 625, sass/styles.scss */
+#footer_nav_wrapper {
+  width: 100%;
+  background-color: #FFFFFF;
+  position: relative;
+  bottom: -1px;
+}
+
+/* line 631, sass/styles.scss */
+#footer_nav {
+  max-width: 999px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+/* line 637, sass/styles.scss */
+.footer_nav_list {
+  margin-left: 4.88%;
+}
+
+/* line 640, sass/styles.scss */
+.footer_nav_item {
+  display: inline-block;
+  height: 31px;
+  border-left: 1px solid #007CC2;
+  padding: 14px 2.105% 0px 2.105%;
+}
+
+/* line 646, sass/styles.scss */
+.footer_nav_list a {
+  color: #007CC2;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1em;
+}
+
+/* line 652, sass/styles.scss */
+#last_footer_nav {
+  border-right: 1px solid #007CC2;
+}
+
+/*shop footer*/
+/* line 661, sass/styles.scss */
+.shop_footer {
+  border-top: 5px solid #B3CC94;
+  width: 100%;
+  background-color: #007CC2;
+}
+
+/* line 666, sass/styles.scss */
+.shop_footer_content {
+  margin: 0 auto;
+  width: 710px;
+  padding: 30px;
+}
+
+/* line 672, sass/styles.scss */
+#shop_footer_links {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* line 676, sass/styles.scss */
+.shop_footer_link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #007CC2;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 24px;
+}
+
+/* line 683, sass/styles.scss */
+#order_options {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Book', 'Quattrocento Sans', sans-serif;
+  font-size: 24px;
+}
+
+/* line 689, sass/styles.scss */
+.footer_logo_area {
+  float: left;
+  border-right: 1px solid #B3CC94;
+  padding-right: 9px;
+  margin-right: 9px;
+}
+
+/* line 695, sass/styles.scss */
+#footer_logo_image {
+  width: 100%;
+}
+
+/* line 698, sass/styles.scss */
+#footer_links {
+  padding-top: 10px;
+}
+
+/* line 701, sass/styles.scss */
+.link_item {
+  display: inline;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: .75em;
+  color: white;
+  border-right: 1px solid white;
+  padding: 0px 9px 0px 9px;
+}
+
+/* line 709, sass/styles.scss */
+.link_item a {
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 715, sass/styles.scss */
+#first_link_item {
+  padding-left: 0;
+}
+
+/* line 719, sass/styles.scss */
+#last_link_item {
+  border-right: 0;
+}
+
+/*=======================================================
+ * mobile nav menu 
+ * ======================================================
+ */
+/* line 732, sass/styles.scss */
+#menu {
+  display: none;
+  height: 41px;
+  padding: 4px 10px 0px 5px;
+  float: left;
+  cursor: pointer;
+}
+
+/* line 739, sass/styles.scss */
+#menu h3 {
+  float: right;
+  color: #FFF;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1.3em;
+  height: 18px;
+  margin: 9px 5px 10px 5px;
+  letter-spacing: 1px;
+}
+
+/* line 749, sass/styles.scss */
+#menu h4 {
+  display: inline-block;
+  float: left;
+  text-indent: -9000px;
+  border-top: double 10px #FFF;
+  border-bottom: solid 3px #FFF;
+  width: 20px;
+  height: 4px;
+  cursor: pointer;
+  padding: 0;
+  margin: 10px;
+}
+
+/* line 762, sass/styles.scss */
+#menu_button {
+  display: none;
+  width: 8.39%;
+  padding: 14px 2.105% 14px 2.105%;
+  color: #FFF;
+  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+  font-size: 1em;
+  background-color: #007CC2;
+  float: right;
+  text-align: center;
+  -moz-box-shadow: 2px 2px 1px 0px #202020;
+  -webkit-box-shadow: 2px 2px 1px 0px #202020;
+  box-shadow: 2px 2px 1px 0px #202020;
+}
+
+/* line 781, sass/styles.scss */
+#menu_wrapper {
+  position: absolute;
+  z-index: 90;
+  top: 142px;
+  background-color: #FFF;
+  width: 100%;
+  -moz-box-shadow: 0px 1px 7px 0px #202020;
+  -webkit-box-shadow: 0px 1px 7px 0px #202020;
+  box-shadow: 0px 1px 7px 0px #202020;
+  display: none;
+}
+
+/* line 792, sass/styles.scss */
+#nav_menu {
+  width: 79.1%;
+  height: 145px;
+  padding: 40px 10.4% 5px;
+  overflow: hidden;
+}
+
+/* line 800, sass/styles.scss */
+#nav_menu ul {
+  padding-left: 0px;
+}
+
+/* line 803, sass/styles.scss */
+#nav_menu li {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+/* line 807, sass/styles.scss */
+#nav_menu a {
+  text-decoration: none;
+  font-family: 'Franklin Gothic Book', 'Quattrocento Sans', Helvetica, sans-serif;
+  color: #007CC2;
+}
+
+/* line 812, sass/styles.scss */
+.menu_column {
+  width: 11.33%;
+  float: left;
+}
+
+/* line 816, sass/styles.scss */
+#menu_left_column {
+  margin-right: 23.19%;
+}
+
+/* line 819, sass/styles.scss */
+#menu_middle_column {
+  margin-right: 23.19%;
+}
+
+/* line 822, sass/styles.scss */
+#menu_right_column ul {
+  margin-left: 80.27%;
+}
+
+/* line 825, sass/styles.scss */
+.line_break {
+  width: 100%;
+  border-bottom: 1px solid #777;
+}
+
+/* line 829, sass/styles.scss */
+#search_container {
+  height: 81px;
+  padding: 20px 10.19%;
+}
+
+/* line 834, sass/styles.scss */
+#searchForm_container {
+  height: 44px;
+  width: 100%;
+}
+
+/* line 838, sass/styles.scss */
+#menu_searchInput {
+  width: 73.3%;
+  height: 40px;
+  padding-left: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  border-right: 1px solid #007CC2;
+  color: #007CC2;
+  font-size: .9em;
+  float: left;
+}
+
+/* line 850, sass/styles.scss */
+#menu_searchButton {
+  margin: 15px 17px;
+  position: absolute;
+  height: 16px;
+  width: 23px;
+}
+
+/* line 856, sass/styles.scss */
+#blue_box {
+  float: left;
+  width: 58px;
+  height: 44px;
+  background-color: #007CC2;
+}
+
+/* line 862, sass/styles.scss */
+#menu_close {
+  float: right;
+  border: 1px solid #007CC2;
+  background-color: #FFF;
+  color: #007CC2;
+  position: relative;
+  bottom: -13px;
+  margin-right: 2%;
+}
+
+/*=======================================================
+* HTML 5 Media Queries
+* ======================================================
+*/
+/*==========================================================================
+  media queries
+  ==========================================================================*/
+/*==========================================================================
+   320px width mobile device styles
+  ==========================================================================*/
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 894, sass/styles.scss */
+  #wrapper {
+    width: 81.25%;
+  }
+}
+
+/*headers*/
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 900, sass/styles.scss */
+  #slogan {
+    height: 50px;
+    top: 0px;
+    left: 170px;
+    padding-top: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 909, sass/styles.scss */
+  #slogan span {
+    line-height: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 914, sass/styles.scss */
+  .nav_item {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 919, sass/styles.scss */
+  #menu {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 924, sass/styles.scss */
+  #menu_wrapper {
+    height: 339px;
+    top: 116px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 930, sass/styles.scss */
+  #npr_logo {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 935, sass/styles.scss */
+  #heart_container {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 940, sass/styles.scss */
+  #social {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 945, sass/styles.scss */
+  .search_box {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 950, sass/styles.scss */
+  #search_container {
+    padding: 20px;
+  }
+}
+
+/*content*/
+/*home*/
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 957, sass/styles.scss */
+  #main_content_wrapper {
+    margin: 20px 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 963, sass/styles.scss */
+  #highlights {
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 968, sass/styles.scss */
+  #sidebar {
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 973, sass/styles.scss */
+  #abbreviated_schedule {
+    border-right: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 978, sass/styles.scss */
+  #shows_container {
+    margin-right: 0px;
+    margin-left: 90px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 985, sass/styles.scss */
+  .shows {
+    height: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 992, sass/styles.scss */
+  #articles {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 998, sass/styles.scss */
+  #left_column {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1004, sass/styles.scss */
+  #right_column {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1010, sass/styles.scss */
+  .article {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1015, sass/styles.scss */
+  #sponsor_section {
+    height: 818px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1020, sass/styles.scss */
+  #column-l {
+    height: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1026, sass/styles.scss */
+  #column-r {
+    height: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1032, sass/styles.scss */
+  .ad-text {
+    position: relative;
+    top: 40%;
+  }
+}
+
+/*shop*/
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1042, sass/styles.scss */
+  #shop_wrapper {
+    width: 100%;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1050, sass/styles.scss */
+  .shop_head {
+    width: 92%;
+    margin: 0 10px;
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1058, sass/styles.scss */
+  .shop_item {
+    width: 235.5px;
+    height: 235.5px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1065, sass/styles.scss */
+  .item_category {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 100%;
+    height: 285.5px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1073, sass/styles.scss */
+  .category_head {
+    margin-top: 5px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1079, sass/styles.scss */
+  .shop_item_list_wrap {
+    top: -236px;
+    width: 96.15%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1089, sass/styles.scss */
+  .item_category_nav {
+    height: 235.5px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1094, sass/styles.scss */
+  .category_nav_button {
+    margin: 95px 44px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1099, sass/styles.scss */
+  .next_button_wrap {
+    top: -550px;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1105, sass/styles.scss */
+  .prev_button_wrap {
+    visibility: hidden;
+  }
+}
+
+/*footers*/
+/*main-footer*/
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1118, sass/styles.scss */
+  .footer_content {
+    width: 200px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1123, sass/styles.scss */
+  .footer_logo_area {
+    width: 152px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 0;
+    float: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1132, sass/styles.scss */
+  #footer_links {
+    padding-top: 0px;
+    text-align: center;
+  }
+}
+
+/*shop-footer*/
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1139, sass/styles.scss */
+  .shop_footer_content {
+    width: 200px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1144, sass/styles.scss */
+  .shop_footer_link {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1149, sass/styles.scss */
+  #order_options {
+    font-size: 20px;
+  }
+}
+
+/*==========================================================================
+   768px width mobile device styles
+  ==========================================================================*/
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1164, sass/styles.scss */
+  #wrapper {
+    width: 91%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1169, sass/styles.scss */
+  .home-wrapper {
+    height: 3570px;
+  }
+}
+
+/*header*/
+/* line 1175, sass/styles.scss */
+#logo_area {
+  width: 310px;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1178, sass/styles.scss */
+  #logo {
+    width: 42%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1183, sass/styles.scss */
+  #slogan {
+    top: 0px;
+    left: 178px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1190, sass/styles.scss */
+  #slogan span {
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1195, sass/styles.scss */
+  #first {
+    width: 110px;
+    position: absolute;
+    left: 340px;
+    top: 0px;
+    float: none;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1204, sass/styles.scss */
+  #first #heart_container {
+    margin-left: 0;
+    width: 90px;
+    padding: 10px;
+    position: absolute;
+    left: 126px;
+    top: 0px;
+  }
+}
+/* line 1214, sass/styles.scss */
+#first #heart_image {
+  position: relative;
+  top: 3px;
+}
+/* line 1218, sass/styles.scss */
+#first #heart_container span {
+  position: relative;
+  top: -4px;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1223, sass/styles.scss */
+  div#social {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1228, sass/styles.scss */
+  .nav_list {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1234, sass/styles.scss */
+  .nav_item {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1239, sass/styles.scss */
+  #menu_wrapper {
+    top: 122px;
+  }
+}
+
+/*content*/
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1246, sass/styles.scss */
+  #main_content_wrapper {
+    width: 94.28%;
+    margin: 20px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1252, sass/styles.scss */
+  #highlights {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1258, sass/styles.scss */
+  #sidebar {
+    width: 100%;
+    float: none;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1265, sass/styles.scss */
+  #schedule_container {
+    margin-right: 20px;
+    width: 44%;
+    position: absolute;
+    float: left;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1274, sass/styles.scss */
+  #shows_container {
+    height: 100%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1279, sass/styles.scss */
+  .time_stamp {
+    height: 8.7%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1284, sass/styles.scss */
+  #sponsor_section {
+    width: 50%;
+    height: 818px;
+    position: relative;
+    float: right;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1293, sass/styles.scss */
+  #articles {
+    width: 46.96%;
+    margin-right: 20px;
+    float: left;
+    position: relative;
+    top: -409px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1302, sass/styles.scss */
+  #column-l {
+    width: 100%;
+    height: 389px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1309, sass/styles.scss */
+  #column-r {
+    width: 100%;
+    height: 389px;
+  }
+}
+
+/* line 1315, sass/styles.scss */
+.ad {
+  width: 100%;
+  height: 47.42%;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1321, sass/styles.scss */
+  #left_column {
+    width: 100%;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1327, sass/styles.scss */
+  #right_column {
+    width: 100%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1332, sass/styles.scss */
+  #schedule {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1337, sass/styles.scss */
+  #listen_live2 {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1342, sass/styles.scss */
+  #television {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1347, sass/styles.scss */
+  #radio {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1352, sass/styles.scss */
+  #menu {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1357, sass/styles.scss */
+  #support {
+    border-right: 1px solid #FFF;
+  }
+}
+
+/*shop*/
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1363, sass/styles.scss */
+  #shop {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1368, sass/styles.scss */
+  .search_box {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1373, sass/styles.scss */
+  #shop_wrapper {
+    width: 93.63%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1378, sass/styles.scss */
+  .item_category {
+    height: 285.5px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1384, sass/styles.scss */
+  .category_head {
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1389, sass/styles.scss */
+  .shop_item_list_wrap {
+    height: 255px;
+    top: -236px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1395, sass/styles.scss */
+  .shop_item_list {
+    height: 235.5px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1401, sass/styles.scss */
+  .shop_item_list li {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1406, sass/styles.scss */
+  .shop_item {
+    width: 235.5px;
+    height: 235.5px;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1418, sass/styles.scss */
+  .item_category_nav {
+    height: 235.5px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1423, sass/styles.scss */
+  .next_button_wrap {
+    top: -474px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1428, sass/styles.scss */
+  .category_nav_button {
+    margin: 95px 44px;
+  }
+}
+
+/*footers*/
+/*main-footer*/
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1444, sass/styles.scss */
+  .footer {
+    position: absolute;
+    top: 3294px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1450, sass/styles.scss */
+  .footer_content {
+    width: 529px;
+  }
+}
+
+/*shop-footer*/
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1462, sass/styles.scss */
+  .shop_footer_content {
+    width: 89.82%;
+    padding: 35px;
+    background-color: #007CC2;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1469, sass/styles.scss */
+  #footer_links {
+    padding-top: 10px;
+  }
+}
+
+/*==========================================================================
+  1280px width widescreen device styles
+ ==========================================================================*/
+/*=======================================================
+* Content section for mobile schedule page using media queries
+*/
+@media screen and (min-width: 320px) {
+  /* line 1490, sass/styles.scss */
+  .content_wrapper {
+    margin: 15px 5.4%;
+  }
+
+  /* line 1493, sass/styles.scss */
+  #mobile_page_headline {
+    float: left;
+    width: 42.86%;
+    font-family: 'Franklin Gothic Book', 'Quattrocento Sans', Helvetica, sans-serif;
+    font-size: 1.6em;
+    margin: 2px 0 15px 0;
+  }
+
+  /* line 1500, sass/styles.scss */
+  .tv_radio_toggle {
+    float: right;
+    width: 21.42%;
+    margin-bottom: 15px;
+    padding: 3px 0;
+    border: 0;
+    font-family: 'Franklin Gothic Book', 'Quattrocento Sans', Helvetica, sans-serif;
+    font-size: .9em;
+    color: white;
+    background-color: #007CC2;
+    -moz-box-shadow: 2px 2px 3px 0px #202020;
+    -webkit-box-shadow: 2px 2px 3px 0px #202020;
+    box-shadow: 2px 2px 3px 0px #202020;
+  }
+
+  /* line 1514, sass/styles.scss */
+  #tv_toggle {
+    display: none;
+  }
+
+  /* line 1517, sass/styles.scss */
+  #schedule_wrapper {
+    clear: both;
+    font-family: 'Franklin Gothic Book', 'Quattrocento Sans', Helvetica, sans-serif;
+    background-color: #959595;
+    overflow: hidden;
+  }
+
+  /* line 1523, sass/styles.scss */
+  #schedule_head {
+    height: 17px;
+    padding: 9px 10px;
+    border-bottom: 1px solid white;
+  }
+
+  /* line 1528, sass/styles.scss */
+  #left_arrow {
+    float: left;
+    border: 0;
+    padding: 0;
+    background-color: #959595;
+    margin: 0px;
+  }
+
+  /* line 1535, sass/styles.scss */
+  #date {
+    float: left;
+    margin-left: 34%;
+    font-size: 1.2em;
+    color: #fff;
+  }
+
+  /* line 1541, sass/styles.scss */
+  #right_arrow {
+    float: right;
+    border: 0;
+    padding: 0;
+    background-color: #959595;
+    margin: 0px;
+  }
+
+  /* line 1548, sass/styles.scss */
+  #radio_schedule {
+    display: none;
+  }
+
+  /* line 1551, sass/styles.scss */
+  .time_column {
+    width: 20.7%;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+  }
+
+  /* line 1557, sass/styles.scss */
+  table {
+    width: 100%;
+  }
+
+  /* line 1560, sass/styles.scss */
+  th, td {
+    padding: 10px;
+    color: white;
+    vertical-align: top;
+  }
+
+  /* line 1565, sass/styles.scss */
+  td {
+    border-bottom: 1px solid white;
+  }
+}
+/*=======================================================
+ * single page specific adjustments to tmayer site
+ * ======================================================
+ */
+/* line 1577, sass/styles.scss */
+.wrapper .content-header-off {
+  height: 92%;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1582, sass/styles.scss */
+  .wrapper .mainContent {
+    height: 76%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1588, sass/styles.scss */
+  .wrapper .content-sidebar-off {
+    height: 88%;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1588, sass/styles.scss */
+  .wrapper .content-sidebar-off {
+    height: 92%;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  /* line 1595, sass/styles.scss */
+  .wrapper .content-sidebar-off .next_button_wrap {
+    height: 235.5px;
+  }
+}
+/* line 1605, sass/styles.scss */
+.wrapper .shopMain {
+  overflow-y: scroll;
+}
+
+/*dont forget to add to scss file */
+
+.item_category > .item_category_nav{
+    display: none;
+}
+
+.item_category {
+  	height: 285.5px;
+  	padding-bottom: 20px;
+  }
+  
+  .shop_item_list_wrap{
+      height: 249px;
+  }
+
+
+
+
+
+
+
+
+.shop_item_list_wrap{
+    top: 5px;   
+}
+
+.shop_item {
+	width: 235.5px;
+	height: 235.5px;
+	background-color: inherit;
+	opacity: inherit;
+}
+.shop_item_wrap {
+	height: 100%;
+	font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+    font-weight: bold;
+}
+.shop_item_wrap p {
+	
+	
+	
+}
+.shop_item_img {
+	float: left;
+	margin: 20px;
+	position: relative;
+	z-index: 10;
+}
+.list_price {
+	margin-left: 20px;
+	margin-bottom: 5px;
+	clear: both;
+	float: left;
+	position: relative;
+	font-size: 14px;
+}
+.member_price { 
+	margin-left: 20px;
+	clear: both;
+	float: left;
+	font-size: 14px;
+}
+.item_name {
+	clear: both;
+	width: 125px;
+	float: right;
+	position: relative;
+	top: -220px;
+	line-height: 20px;
+}
+.item_description {
+	width: 125px;
+	margin-left: 0;
+	position: relative;
+	font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+}
+.item_description_link {
+	display: none;
+	width: 125px;
+	margin-left: 0;
+	float: right;
+	position: relative;
+	left: 100px;
+	top: -148px;
+	font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #007CC2;
+}
+.add_to_cart {
+	
+    padding: 10px;
+	height: 35px;
+    border: 0px;
+	position: relative;
+    left: -50px;
+	
+	z-index: 10;
+	font-size: 15px;
+    color: white;
+    background-color: #007CC2;
+}
+.shop_item_background {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: -315px;
+	background-color: #007cc2;
+	opacity: .2;
+	
+}
+
+
+
+	.shop_item_img {
+		margin: 20px;
+	}
+	.list_price {
+		margin-left: 20px;
+		width: 80px;
+	}
+	.member_price {
+		margin-left: 20px;
+		width: 80px;
+	}
+	.item_name {
+		width: 115px;
+		top: -165px;
+		left: -20px;
+	}
+	.item_description{
+		display: none;
+	}
+	.item_description_link{
+		display: block;
+		margin-top: -10px;
+		left: -10px;
+	}
+	.add_to_cart {
+		float: inherit;
+		top: 160px;
+		left: 3px;
+		
+	}
+	
+	.shop_item_background {
+		top: -239px;
+	}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.item_category {
+		padding:10px 0px;
+		width: 92%;
+	}
+}
+
+
+
+
+
+
+
+
+

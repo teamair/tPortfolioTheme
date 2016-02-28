@@ -1,0 +1,1608 @@
+/* http://meyerweb.com/eric/tools/css/reset/v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+html {
+  
+}
+body {
+  line-height: 1;
+  
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+strong{font-weight:bold;}
+
+/* =============================================================================================
+ HTML 5 media quaries that handle a variety of pixel densities that many mobile devices exibit
+ ===============================================================================================*/
+
+
+
+
+
+
+#wrapper {
+  margin-top: 20px;
+}
+
+
+
+/*=======================================================
+ * header section including: logo, nav/menu bar, etc
+ * ======================================================
+ */
+  #header {
+    width: 100%;
+  }
+  
+  
+  
+  
+  
+   
+   
+  
+   
+   #heart_image {
+     position: relative;
+     top: 3px;
+   }
+   #heart_container span{
+     position: relative;
+     top: -4px;
+   }
+  
+  
+  
+    #logo_area{
+      width: 95%;
+      height: 49px;
+      margin-bottom: 20px;
+      padding-left: 1.9825%;
+      padding-right: 1.9825%;
+    }
+       
+        #logo {
+          width: 32%;
+        }
+        #logo_image{
+        }
+        #slogan{
+          height: 40px;
+          border-left: 1px solid #B3CC94;
+          margin-left: 10px;
+          padding: 9px 10px 0px 10px;
+          position: absolute;
+          top: 0px;
+          left: 178px;
+        }
+        #slogan span {
+          line-height: 40px;
+        }
+          #logo span{
+            font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+            font-size: 14px;
+            line-height: 39px;
+          }
+      #first{
+        width: 63.95%;
+        float: right;
+        position: absolute;
+        left: 340px;
+        top: 0px;
+      }   
+        #npr_logo {
+        margin-left: 5px;
+        position: relative;
+        top: 6px;
+        }
+          #npr_image{
+          }
+          #heart_container {
+             margin-left: 0;
+             width: 90px;
+            height: 28px;
+            padding: 10px;
+            position: absolute;
+            left: 126px;
+            top: 0px;
+            -moz-box-shadow: 1px 3px 1px 6px #ccc;
+            -webkit-box-shadow: 3px 3px 6px 0px #202020;
+            box-shadow: 3px 3px 6px 0px #202020;
+            cursor: pointer;
+          }
+            #heart_image{
+            position: relative;
+            top: 14px;
+            }
+            #heart_container span{
+              position: relative;
+              top: 6px;
+              vertical-align: middle;
+              font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+              font-size: 1.2em;
+              color: #007CC2;
+            }
+        #social{
+          float: right;
+          position: absolute;
+          top: 0px;
+          right: 30px;
+        }
+          #social span{
+            vertical-align: middle;
+            font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+          }
+          #social img{
+            vertical-align: middle;
+          }
+        #menu_button{
+         
+          color: #FFF;
+        } 
+      #nav_wrapper{
+        background-color: #007CC2;
+        width: 100%;
+        height: 47px;
+        border-bottom: 5px solid #B3CC94;
+      }
+        #main_nav{
+          max-width: 999px;
+          height:0;
+          margin: 0px auto;
+        }
+          .nav_list{
+            margin: 0 auto;
+            text-align: center;
+          }
+            .menu{
+              display: none;
+            }
+            .nav_item{
+              display: inline-block;
+              border-left: 1px solid #FFF;
+              padding: 14px 2.105% 14px 2.105%;
+            }
+              .nav_list a{
+                color: #FFF;
+                text-decoration: none;
+                font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+                font-size: 1em;
+              }
+              #listen_live1{
+                display:none;
+              }
+              #schedule{
+                display:none;
+              }
+              #listen_live2{
+                display:none;
+              }
+              .search_box{
+                width: 21.5%;
+                display: inline-block;
+                height: 45px;
+                background-color: #FFF;
+              }
+                .searchInput{
+                  height:43px;
+                  border: 0px;
+                  padding: 0px 0px 0px 6.654%;
+                  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+                  font-size: 1em;
+                  font-weight: bold;
+                  color: #007CC2;
+                  max-width: 66.2%;
+                }
+                  .searchButton{
+                    float: right;
+                      margin: 15px;
+                  }
+/*=======================================================
+ * Content section for home page/index.html
+ * ======================================================
+ */             
+  #main_content_wrapper{
+    margin: 20px auto;
+    width: 96%;
+  }   
+    #secondary_content_wrapper{
+    }
+      #highlights{
+        width: 65.042%;
+        height:100%;
+        border-bottom: 1px solid #B3CC94;
+        padding-bottom: 19px;
+        margin-bottom: 20px;
+        float: left;
+      }
+      #mobile_highlights_section_head{
+        font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top:-8px;
+        margin-bottom:15px;
+      }
+        .highlight_image{
+          margin-bottom: 10px;
+          width: 100%;
+          display:block;
+          float:left;
+        }
+        .highlights_text_area{
+        } 
+          .highlights_section_head{
+            font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+          }
+            .highlight_headline{
+              font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+              font-size: 1.875em;
+              font-weight: bold;
+              color: #007CC2;
+              margin-top: 5px;
+              margin-bottom: 5px;
+              cursor: pointer;
+            }
+            .highlight_body_text{
+              font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+              font-size: 1.125em;
+              color: #444444;
+              line-height: 21.5px;
+            }
+              #articles{
+                width: 65.042%;
+              }
+                #left_column{
+                  width:48.43%;
+                  float: left;
+                  margin-right: 3.125%;
+                  margin-bottom:20px;
+                }
+                #right_column{
+                  width: 48.43%;
+                  float: right;
+                  margin-bottom:20px;
+                }
+                .mobile_section_head{
+                font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+                font-size: 1.2em;
+                font-weight: bold;
+                margin-bottom:15px;
+                display:none;
+                }
+                  .article{
+                    width: 100%;
+                    border-bottom: 1px solid #B3CC94;
+                      margin-bottom: 19px;
+                      padding-bottom: 19px;
+                  }
+                    .article_image{
+                      margin-bottom: 5px;
+                      width: 100%;
+                      cursor: pointer;
+                    }
+                    .article_headline{
+                      font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+                      font-size: 1.5em;
+                      color: #007CC2;
+                      cursor: pointer;
+                    }
+                    .article_text{
+                      font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+                      font-size: 0.875em;
+                        line-height: 17.25px;
+                        margin-top: 5px;
+                        padding-right: 9px;
+                      color: #444444;
+                    }
+
+/*=======================================================
+ * shop content section including: the shop stuff
+ * ======================================================
+ */ 
+ 
+      
+ 
+    #wrapper{
+      width: 97%;
+      overflow: hidden;
+      position: absolute;
+      
+    }
+    #shop_wrapper{
+      padding: 20px;
+      width: 96.09%;
+      margin: 0 auto;       
+    }
+      .shop_head{
+        padding-bottom: 15px;
+        width: 100%;
+        height: 25px;
+        border-bottom: 1px solid #B3CC94;
+        font-size: 24px;
+        font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+      }
+        #shop_head_txt{
+          float: left;
+        }
+        #view_cart_txt{
+          float: right;
+          color: #007CC2;
+        }
+        .item_category{
+          overflow: hidden;
+          width: 100%;
+          height: 380px;
+          margin-top: 10px;
+          padding-bottom: 5px;
+          border-bottom: 1px solid  #B3CC94;
+        }
+          .item_category div{
+            display: inline-block;
+          }
+          li.shop_item:last-child{
+            margin-right: 0;
+          }
+          .category_head{
+            margin: 10px 0;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+            color: #007cc2;
+          }
+          .shop_item_list_wrap{
+            width: 100%;
+            height: 329px;
+            position: relative;
+            top: -314px;
+            overflow: hidden;
+            overflow-x: scroll;
+          }
+          .shop_item_list{
+            width: 1650px;
+            height: 314px;
+            clear: both;
+            position: relative;
+
+          }
+          .shop_item{
+            width: 314px;
+            height: 314px;
+            margin-right: 20px;
+            float: left;
+            background-color: #007cc2;
+            opacity: .2;
+
+          }
+          .third_item{
+            margin-right: 0;
+          }
+          .item_category_nav{
+            width: 105px;
+            height: 314px;
+            position: relative;
+            opacity: .5;
+            background-color: black;
+          }
+          .prev_button_wrap{
+            float: left;
+            top: 0px;
+            z-index: 100;
+            
+            
+            
+          }
+          .next_button_wrap{
+            float: right;
+            top: -646px;
+          }
+          .category_nav_button{
+            margin: 135px 44px;
+            width: 22px;
+            height: 40px;
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+            position: relative;
+            z-index: 200;
+          }
+          .next_button{
+            background-image: url("../../../img/shop/next_arrow.png");
+          }
+          .prev_button{
+            background-image: url("../../../img/shop/previous_arrow.png");
+          }
+    
+
+ 
+/*=======================================================
+ * sidebar section including: brief schedule, listen live, full schedule and program guide buttons, sponsor spots
+ * ======================================================
+ */                     
+      #sidebar{
+        width: 33%;
+        float: right;
+      }
+        .schedule_container{
+          margin-bottom: 20px;
+          height: 389px;
+          overflow: hidden;
+        }
+        #listen_live_button{
+          text-align:center;
+          color: #FFF;
+          width: 100%;
+          background-color: #007CC2;
+          border: 0;
+          height: 45px;
+          font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        #radio_button{
+          text-align:center;
+          color: #007CC2;
+          width: 50%;
+          background-color: #FFF;
+          border: 0;
+          height: 45px;
+          font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+          font-size: 18px;
+          float:left;
+          cursor: pointer;
+        }
+        #tv_button{
+          text-align:center;
+          color: #FFF;
+          width: 50%;
+          background-color: #b9b9b9;
+          border: 0;
+          height: 45px;
+          font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+          font-size: 18px;
+          cursor: pointer;
+        }
+          #abbreviated_schedule{
+            border-left: 1px solid #B9B9B9;
+            border-right: 1px solid #B9B9B9;
+            height: 65.29%;
+            overflow: hidden;
+          }
+            .time_stamp_container{
+              float: left;
+              width: 29.375%;
+              height: 100%;
+            }
+            .time_stamp{
+              border-bottom: 1px solid #FFF;
+              height:8.6%;
+              padding: 10px 18.72% 94px;
+              text-align: center;
+              background-color: #B9B9B9;
+              font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+              color: #FFF;
+            }
+            .time{
+              max-width: 45px;
+              width: 100%;
+              height: 22px;
+              margin: auto;
+            }
+            .time strong{
+              font-size:1.5em;
+              float:left;
+              font-weight:normal;
+              
+        
+            }
+              .min_abbrv{
+                float: left;
+                width: 33%;
+                height: 18px;
+                line-height: 9px;
+                font-size: .625em;
+                position: relative;
+                top: 3px;
+                margin-left: 4.1%;
+              }
+                .min_abbrv strong{
+                  font-size:12px;
+                }
+          .shows_container{
+            height: 100%;
+          }   
+            .shows{
+              margin-left: 35.53%;
+              margin-right: 6.289%;
+              
+            }
+          .break{
+            padding: 9px 0px;
+            border-bottom:1px dotted #B3CC94;
+            font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+            font-size: 12px;
+            line-height:14.5px;
+          }
+          #last_break{
+            border:0;
+          }
+            
+        #full_schedule_button{
+          border: 0;
+          width: 49.2%;
+          height: 31px;
+          padding-top: 14px;
+          float: left;
+          background-color: #007CC2;
+          text-align:center;
+          color: #FFF;          
+          font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+          font-size: 18px;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        #prog_button{
+          border-right: 1px solid #007CC2;
+          border-left: 1px solid white; 
+          width: 50%;
+          height: 31px;
+          padding-top: 14px;
+          float: left;
+          background-color: #007CC2;
+          text-align:center;
+          color: #FFF;          
+          font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+          font-size: 18px;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        .ad{
+          background-color: #007CC2;
+          margin-bottom:20px;
+          text-align: center;
+          cursor: pointer;
+        }
+        
+        
+/*=======================================================
+ * footer section includes: additional nav, logo, legal copy, additional links
+ * ======================================================
+ */         
+      .footer{
+        width: 100%;
+        background-color: #007CC2;
+        clear: both;
+           
+      }
+      .footer_content{
+          margin: 0 auto;
+          width: 770px;
+          padding: 30px;
+      }
+        #footer_nav_wrapper{
+          width: 100%;
+          background-color: #FFFFFF;
+          position: relative;
+          bottom:-1px;
+        }           
+          #footer_nav{
+            max-width: 999px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            
+          }
+            .footer_nav_list{
+              margin-left: 4.88%;
+            }
+              .footer_nav_item{
+                display: inline-block;
+                height: 31px;
+                border-left: 1px solid #007CC2;
+                padding: 14px 2.105% 0px 2.105%;
+              }
+                .footer_nav_list a{
+                  color: #007CC2;
+                  text-decoration: none;
+                  font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+                  font-size: 1em;
+                }
+                  #last_footer_nav{
+                    border-right: 1px solid #007CC2;
+                  }
+                  
+                  
+            /*shop footer*/
+           .shop_footer_wrap{
+             
+           }
+           .shop_footer{
+             border-top: 5px solid #B3CC94;
+             width: 100%;
+             background-color: #007CC2;
+           }
+          .shop_footer_content{
+            margin: 0 auto;
+            width: 710px;
+            padding: 30px;
+            
+          }
+            #shop_footer_links{
+              text-align:center;
+              margin-bottom: 20px;
+            }
+              .shop_footer_link{
+                margin-right: 20px;
+                text-decoration: none;
+                color: #007CC2;
+                font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+                font-size:24px;
+              }
+            #order_options{
+              text-align: center;
+              margin-bottom: 20px;
+              font-family: 'Franklin Gothic Book', 'Quattrocento Sans', sans-serif;
+              font-size: 24px;
+            }
+            .footer_logo_area{
+              float: left;
+              border-right: 1px solid #B3CC94;
+              padding-right: 9px;
+              margin-right: 9px;
+            }
+              #footer_logo_image{
+                width: 100%;
+              }
+            #footer_links{
+              padding-top: 20px;
+            } 
+              .link_item{
+                display:inline;
+                font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+                font-size: .75em;
+                color: white;
+                border-right:1px solid white;
+                padding:0px 9px 0px 9px;
+              }
+              .link_item a{
+                font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+                font-size: 1em;
+                color: white;
+                text-decoration: none;
+              }
+              #first_link_item{
+                padding-left:0;
+              }
+              
+              #last_link_item{
+                border-right:0;
+              }
+              
+             
+              
+              
+/*=======================================================
+ * mobile nav menu 
+ * ======================================================
+ */ 
+
+
+ #menu{
+    display: none;
+    height: 41px;
+    padding: 4px 10px 0px 5px;
+    float: left;
+    cursor: pointer;
+  }
+  #menu h3{
+    float: right;
+    color: #FFF;
+    font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+    font-size: 1.3em;
+    height: 18px;
+    margin: 9px 5px 10px 5px;
+    letter-spacing: 1px;
+  }
+  
+  #menu h4{
+    display: inline-block;
+    float: left;
+    text-indent: -9000px;
+    border-top: double 10px #FFF;
+    border-bottom: solid 3px #FFF;
+    width: 20px;
+    height: 4px;
+    cursor: pointer;
+    padding: 0;
+    margin: 10px;
+  }
+  
+  #menu_button{
+    display: none;
+    width:8.39%;
+    padding: 14px 2.105% 14px 2.105%;
+    color: #FFF;
+    font-family: 'Franklin Gothic Book','Quattrocento Sans',Helvetica,sans-serif;
+    font-size: 1em;
+    background-color: #007CC2;
+    float:right;
+    text-align:center;
+    -moz-box-shadow: 2px 2px 1px 0px #202020;
+    -webkit-box-shadow: 2px 2px 1px 0px #202020;
+    box-shadow: 2px 2px 1px 0px #202020;
+  }
+
+
+
+
+
+  #menu_wrapper {
+  position: absolute;
+  z-index: 90;
+  top: 142px;
+  background-color: #FFF;
+  width: 100%;
+  -moz-box-shadow: 0px 1px 7px 0px #202020;
+  -webkit-box-shadow: 0px 1px 7px 0px #202020;
+  box-shadow: 0px 1px 7px 0px #202020;
+  display:none;
+}
+#nav_menu {
+  width: 79.1%;
+  height: 145px;
+  padding: 40px 10.4% 5px;
+  overflow: hidden;
+
+    
+}
+#nav_menu ul {
+    padding-left:0px;
+}
+#nav_menu li {
+    list-style:none;
+    margin-bottom: 30px;
+}
+#nav_menu a {
+    text-decoration: none;
+    font-family:'Franklin Gothic Book', 'Quattrocento Sans', Helvetica, sans-serif;
+    color: #007CC2;
+}
+.menu_column {
+    width: 11.33%;
+  float: left;
+}
+#menu_left_column{
+  margin-right: 23.19%;
+}
+#menu_middle_column{
+  margin-right: 23.19%;
+}
+#menu_right_column ul {
+    margin-left: 80.27%;
+}
+.line_break{
+  width:100%;
+  border-bottom:1px solid #777;
+}
+#search_container {
+   
+  height: 81px;
+  padding: 20px 10.19%;
+}
+#searchForm_container{
+  height: 44px;
+  width: 100%;
+}
+#menu_searchInput {
+    width: 73.3%;
+  height: 40px;
+  padding-left: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  border-right: 1px solid #007CC2;
+  color: #007CC2;
+  font-size: .9em;
+  float: left;
+  
+}
+#menu_searchButton {
+   margin: 15px 17px;
+  position: absolute;
+  height: 16px;
+  width: 23px;
+}
+#blue_box{
+  float: left;
+  width: 58px;
+  height: 44px;
+  background-color: #007CC2;
+}
+#menu_close {
+    float: right;
+  border: 1px solid #007CC2;
+  background-color: #FFF;
+  color: #007CC2;
+  position: relative;
+  bottom: -13px;
+  margin-right: 2%;
+}
+
+ /*=======================================================
+ * HTML 5 Media Queries
+ * ======================================================
+ */           
+
+
+/*==========================================================================
+  media queries
+  ==========================================================================*/
+ $mobile-width: 320px;
+ $tablet-width:767px;
+ $desktop-width: 1023px;
+ $widescreen-width: 1280px;
+ 
+  /*==========================================================================
+     320px width mobile device styles
+    ==========================================================================*/
+ @mixin mobile {
+     @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width}) {
+        @content;
+     } 
+   }
+   #wrapper {
+     @include mobile{
+       width: 81.25%;
+     } 
+   }
+   /*headers*/
+   #slogan {
+     @include mobile {
+       height: 50px;
+       top: 0px;
+       left: 170px;
+       padding-top: 0px;
+       padding-right: 0px;
+     }   
+   }
+   #slogan span{
+     @include mobile {
+       line-height: 0;
+     }
+   }
+   .nav_item{
+     @include mobile {
+       display: none;
+     }
+   }
+   #menu {
+     @include mobile {
+       display: inline-block;
+     }
+   } 
+   #menu_wrapper {
+     @include mobile {
+       height: 339px;
+       top: 116px;
+     }
+   }
+   #npr_logo {
+     @include mobile {
+       display: none;
+     }
+   }
+   #heart_container {
+     @include mobile {
+       display: none;
+     }
+   }
+   #social {
+     @include mobile {
+       display: none;  
+     } 
+   }
+   .search_box {
+     @include mobile {
+       display: none;
+     }
+   }
+   #search_container{
+     @include mobile {
+       padding: 20px;
+     }
+   }
+   /*content*/
+    /*home*/
+   #main_content_wrapper {
+     @include mobile {
+        margin: 20px 0;
+        width: 100%;
+     }
+   }
+   #highlights {
+     @include mobile {
+       width: 100%;
+     }
+   }
+   #sidebar {
+     @include mobile {
+       width: 100%;
+     }
+   }
+   #abbreviated_schedule {
+     @include mobile {
+       border-right: 0;
+     }
+   }
+   #shows_container {
+     @include mobile {
+      margin-right: 0px;
+      margin-left: 90px;
+      height: 100%;
+     }
+   }
+   .shows {
+     @include mobile {
+      height: 100%;
+      margin-right: 0px;
+      margin-left: 0px;
+     }
+   }
+   #articles {
+     @include mobile {
+      width: 100%;
+      overflow: hidden;
+     }
+   }
+    #left_column {
+      @include mobile{
+        margin-top: 20px;
+        width: 100%;
+      }
+    }
+    #right_column {
+      @include mobile {
+        width: 100%;
+        margin-bottom: 0px;
+      } 
+    }
+    .article {
+      @include mobile {
+        margin-top: 20px;
+      }
+    }
+    #sponsor_section {
+      @include mobile {
+        height: 818px;
+      }
+    }
+    #column-l {
+      @include mobile {
+         height: 50%;
+         margin-bottom: 20px;
+      }
+    }
+    #column-r {
+      @include mobile {
+        height: 50%;
+        margin-bottom: 20px;
+      }
+    }
+    .ad-text {
+     @include mobile {
+       position: relative;
+       top: 40%;
+     }
+    }
+    
+    
+    
+   /*shop*/
+  #shop_wrapper {
+    @include mobile {
+      width: 100%;
+      padding: 0;
+      padding-top: 15px;
+      padding-bottom: 20px;
+    }
+  }
+    .shop_head {
+      @include mobile {
+        width: 92%;
+        margin:0 10px;
+        font-size: 20px;
+        padding-bottom: 5px;
+      }
+    }
+    .shop_item {
+      @include mobile {
+        width: 235.5px;
+        height: 235.5px;
+      }
+    }
+    
+    .item_category {
+      @include mobile {
+        margin-top: 5px;
+        margin-left: 10px;
+        width: 100%;
+        height: 285.5px;
+      }
+    }
+    .category_head {
+      @include mobile {
+         margin-top: 5px;
+         font-size: 24px;
+      }
+    }
+    .shop_item_list_wrap{
+      @include mobile{
+        top: -236px;
+        width: 96.15%;
+      }
+    }
+    .shop_item_list{
+      @include mobile{
+      }
+    }
+    .item_category_nav{
+      @include mobile{
+        height: 235.5px;
+      }
+    }
+    .category_nav_button{
+      @include mobile{
+        margin: 95px 44px;
+      }
+    }
+    .next_button_wrap{
+      @include mobile{
+        top: -550px;
+        visibility: hidden;
+      }
+    }
+    .prev_button_wrap{
+      @include mobile{
+        visibility: hidden;
+      }
+    }
+    .next_button{
+      @include mobile{        
+       
+      }
+    }
+    
+   /*footers*/
+      /*main-footer*/
+     .footer_content {
+       @include mobile {
+         width: 200px;
+       }
+     }
+      .footer_logo_area {
+        @include mobile {
+          width: 152px;
+          margin: 0 auto;
+          margin-bottom: 10px;
+          border: 0;
+          float: none;
+        }
+      }
+      #footer_links {
+        @include mobile {
+          padding-top: 0px;
+          text-align: center;
+        }
+      }
+     /*shop-footer*/
+    .shop_footer_content {
+      @include mobile {
+        width: 200px;
+      }
+    }
+    .shop_footer_link {
+      @include mobile {
+       font-size: 20px;
+      }
+    }
+    #order_options {
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+ 
+  /*==========================================================================
+     768px width mobile device styles
+    ==========================================================================*/
+  
+   @mixin tablet {
+     @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}) {
+        @content;
+     } 
+   }
+  #wrapper{
+    @include tablet {
+      width: 91%;
+    }
+  } 
+  .home-wrapper{
+    @include tablet {
+      height: 3570px;  
+    } 
+  }
+  /*header*/
+ #logo_area{
+   width: 310px;
+ }
+   #logo{
+     @include tablet {
+       width: 42%;
+     }
+   }
+   #slogan {
+     @include tablet {
+       top: 0px;
+       left: 178px;
+       height: 40px;
+     }
+   }
+   #slogan span{
+     @include tablet {
+       line-height: 40px;
+     }
+   }
+   #first{
+     @include tablet{
+       width: 110px;
+       position: absolute;
+       left: 340px;
+       top: 0px;
+
+       float:none;
+     }
+   #heart_container{
+     @include tablet{
+        margin-left: 0;
+        width: 90px;
+        padding: 10px;
+        position: absolute;
+        left: 126px;
+        top: 0px;
+        }
+   }
+   #heart_image {
+     position: relative;
+     top: 3px;
+   }
+   #heart_container span{
+     position: relative;
+     top: -4px;
+   }
+   }
+   div#social{
+     @include tablet{
+       display:none;
+     } 
+   }
+   .nav_list{
+     @include tablet{
+        margin: 0 auto;
+        text-align: center;
+     } 
+   }
+   .nav_item{
+     @include tablet{
+       display:none;
+     }
+   }
+   #menu_wrapper{
+     @include tablet{
+       top:122px
+     }
+   }
+   
+   /*content*/
+      #main_content_wrapper{
+         @include tablet {
+           width: 94.28%; 
+           margin: 20px;
+         }
+       }
+       #highlights{
+         @include tablet {
+           width: 100%;
+           float: none;
+         }
+       }
+       #sidebar{
+         @include tablet {
+           width: 100%;
+           float: none;
+           overflow: hidden;
+         }
+       }
+       #schedule_container {
+         @include tablet {
+            margin-right: 20px;
+            width: 44%;
+            position: absolute;
+            float: left;
+            overflow: hidden;
+         }
+       }
+       #shows_container{
+         @include tablet {
+           height: 100%;
+         }
+       }
+       .time_stamp {
+         @include tablet {
+           height: 8.7%;
+         }
+       }
+       #sponsor_section {
+         @include tablet {
+           width: 50%;
+           height: 818px;
+           position: relative;
+           
+           float: right;
+         }
+       }
+       #articles{
+         @include tablet {
+             width: 46.96%;
+             margin-right: 20px;
+             float: left;
+             position: relative;
+             top: -409px;
+         }
+       }
+       #column-l{
+         @include tablet{
+           width: 100%;
+           height: 389px;
+           margin-bottom: 20px;
+         }
+       }
+       #column-r{
+         @include tablet {
+           width: 100%;
+           height: 389px;
+         }
+       }
+       .ad{
+         width: 100%;
+         height: 47.42%;
+       }
+       
+       
+       #left_column{
+         @include tablet{
+           width: 100%;
+           margin-right: 20px; 
+         }
+      }
+      #right_column{
+        @include tablet {
+          width: 100%;
+        }
+      }
+      #schedule{
+        @include tablet{
+          display: none;
+        }
+      }
+      #listen_live2{
+         @include tablet{
+          display: none;
+        }
+      }
+      #television{
+        @include tablet{
+          display:none;
+        }
+      }
+      #radio{
+        @include tablet{
+          display:none;
+        }
+      }
+      #menu{
+        @include tablet{
+          display:inline-block;
+        }
+      }
+      #support{
+         @include tablet{
+           border-right:1px solid #FFF;
+        }
+      }
+      /*shop*/
+          #shop{
+            @include tablet{
+              display:none;
+            }
+          }
+          .search_box{
+             @include tablet{
+                display:none; 
+             } 
+          }
+          #shop_wrapper{
+            @include tablet{
+              width: 93.63%;
+            }
+          }
+          .item_category{
+            @include tablet{
+              height: 285.5px;
+              padding-bottom: 20px;
+            }
+          }
+          .category_head{
+            @include tablet{
+              margin: 10px 0;
+            }
+          }
+          .shop_item_list_wrap{
+            @include tablet{
+              height: 255px;
+              top: -236px;
+            }
+          }
+          .shop_item_list{
+            @include tablet{
+              height:235.5px;
+            }
+            
+          }
+          .shop_item_list li{
+            @include tablet{
+              display: inline-block;
+            }
+          }
+          .shop_item{
+            @include tablet{
+              width: 235.5px;
+              height: 235.5px;
+              display:inline-block;
+            } 
+          }
+          .item_category{
+            @include tablet{
+               
+            }
+          }
+          .item_category_nav{
+            @include tablet{
+              height: 235.5px;
+            }
+          }
+          .next_button_wrap{
+            @include tablet{
+              top: -474px;
+            }
+          }
+          .category_nav_button{
+            @include tablet{
+               margin: 95px 44px;
+            }
+          }
+          .next_button{
+            @include tablet{
+             
+            }
+          }
+          
+          
+          
+          
+   /*footers*/
+      /*main-footer*/
+     .footer{
+       @include tablet {
+         position: absolute;
+         top: 3294px;
+       }
+     }
+        .footer_content {
+          @include tablet {
+            width: 529px;  
+          }
+        }
+      /*shop-footer*/
+     .shop_footer_wrap{
+       
+     }
+     .shop_footer{
+       
+     }
+     .shop_footer_content {
+       @include tablet {
+         width: 89.82%;
+         padding: 35px;
+         background-color: #007CC2;
+       }
+     }
+     #footer_links {
+       @include tablet {
+         padding-top: 10px;
+       }
+     }
+ 
+ /*==========================================================================
+   1280px width widescreen device styles
+  ==========================================================================*/
+ @mixin widescreen {
+     @media (min-width: #{$widescreen-width}) {
+        @content;
+     } 
+   }
+  
+  
+  
+ /*=======================================================
+ * Content section for mobile schedule page using media queries
+ */ 
+@media screen and (min-width: 320px){
+  .content_wrapper{
+    margin:15px 5.4%
+  }
+  #mobile_page_headline{
+    float: left;
+    width: 42.86%;
+    font-family:'Franklin Gothic Book', 'Quattrocento Sans', Helvetica, sans-serif;
+    font-size: 1.6em; 
+    margin: 2px 0 15px 0;
+  }
+  .tv_radio_toggle{
+    float: right;
+    width:21.42%;
+    margin-bottom: 15px;
+    padding: 3px 0;
+    border: 0;
+    font-family:'Franklin Gothic Book', 'Quattrocento Sans', Helvetica, sans-serif;
+    font-size: .9em;
+    color: white;
+    background-color: #007CC2;
+    -moz-box-shadow: 2px 2px 3px 0px #202020;
+    -webkit-box-shadow: 2px 2px 3px 0px #202020;
+    box-shadow: 2px 2px 3px 0px #202020;
+  }
+  #tv_toggle{
+    display:none;
+  }
+  #schedule_wrapper{
+    clear: both;
+    font-family:'Franklin Gothic Book', 'Quattrocento Sans', Helvetica, sans-serif;
+    background-color: #959595;
+    overflow: hidden;
+  }
+  #schedule_head{
+    height: 17px;
+    padding: 9px 10px;
+    border-bottom: 1px solid white;
+  }
+  #left_arrow{
+    float: left;
+    border: 0;
+    padding: 0;
+    background-color: #959595;
+    margin: 0px;
+  }
+  #date{
+    float: left;
+    margin-left:34%;
+    font-size: 1.2em; 
+      color: #fff;
+  }
+  #right_arrow{
+    float: right;
+    border: 0;
+    padding: 0;
+    background-color: #959595;
+    margin: 0px;
+  }
+  #radio_schedule{
+    display:none;
+  }
+  .time_column{
+    width: 20.7%;
+    border-right: 1px solid #FFF;
+    border-bottom:1px solid #FFF;
+    
+  }
+  table{
+    width:100%
+  }
+  th, td{
+    padding: 10px;
+    color:white;
+    vertical-align: top;
+  }
+  td{
+    border-bottom: 1px solid white;
+  }   
+}
+              
+/*=======================================================
+ * single page specific adjustments to tmayer site
+ * ======================================================
+ */ 
+ 
+ 
+ .wrapper{
+   .content-header-off{
+     height:92%;
+   }
+ }
+ .wrapper{
+   .mainContent{
+     @include tablet{
+       height: 76%;
+     }
+   }
+   
+   .content-sidebar-off{
+     @include mobile {
+       height: 88%;
+     }
+     @include tablet {
+       height: 92%;
+     }
+     .next_button_wrap{
+       @include mobile{
+         
+       }
+       @include tablet {
+        
+         height: 235.5px;
+       }
+     }
+   }
+   .shopMain{
+     overflow-y: scroll;
+   }
+ }
