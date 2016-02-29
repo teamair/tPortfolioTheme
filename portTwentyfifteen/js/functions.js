@@ -493,7 +493,7 @@ jQuery(function() {
                 jQuery(".main-content-listItem").remove();
                 console.log("butt loads of cats");
                 $appendToEl.append(function() {
-                    var html = '<li class="main-content-listItem dndIntro"><div class="dnd-text"> << Drag and Drop Here</div></li>';
+                    var html = '<li class="main-content-listItem dndIntro"><div class="dnd-text"> << Drag and Drop Here or Click a Category</div></li>';
                     return html;
                 });	
             }
